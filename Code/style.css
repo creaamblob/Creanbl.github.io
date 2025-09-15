@@ -112,6 +112,7 @@ p {
 .LinkButton:hover {
     transform: scale(1.66);
     background-color: rgba(255, 255, 255, 0.404);
+    box-shadow: 0 0 4px white;
 }
 .LinkButtonSmol {
     width: 54px;
@@ -151,9 +152,6 @@ linktab:hover {
     left: -3px;
 
 }
-textarea {
-    cursor: url('../Assets/Cursor.png') 11 8, auto;
-}
 input {
     cursor: url('../Assets/Cursor.png') 11 8, auto;
 }
@@ -162,7 +160,7 @@ a {
 }
 textarea {
     font-family: WanderersLost;
-    background-color: black;
+    background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%);
     box-shadow: 0px 0px 5px gray;
     border: 4px gray ridge;
     color: white;
@@ -171,15 +169,16 @@ textarea {
 }
 button {
     font-family: WanderersLost;
-    background-color: black;
-    box-shadow: 0px 0px 5px gray;
-    border: 4px gray ridge;
+    background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%);  
+    box-shadow: 0px 0px 4px gray;
+    border: 2px gray ridge;
     color: white;
     cursor: url('../Assets/Cursor_Hover.png') 18 6, auto;
     transition: 0.25s;
 }
 button:hover {
     transform: scale(1.25);
+    box-shadow: 0px 0px 8px white;
 }
 audio {
     background-color: gray;
@@ -201,7 +200,7 @@ img {
     border-radius: 5px;
 }
 .Window {
-    background-color: #00000082;
+    background-color: #0000009d;
 
     vertical-align:middle;
     display: inline-block;
@@ -280,8 +279,8 @@ img {
   }
   .ChangePageButton.active {
     cursor: url('../Assets/Cursor_NuhUh.png') 11 8, auto;
-    color: rgb(129, 89, 158);
-    border-color: rgb(129, 89, 158);
+    color: rgb(98, 186, 253);
+    border-color: rgb(98, 186, 253);
     transform: scale(1.4);
     background-color: white;
   }
