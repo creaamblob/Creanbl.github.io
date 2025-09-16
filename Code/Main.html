@@ -16,15 +16,6 @@
     <img src="../Assets/CRT.gif" class="CRT">
     <style>
         @font-face { font-family: WanderersLost; src: url('../Assets/WandererLost\ Font.ttf'); }
-        h1:hover {
-            transform: scale(1.25);
-        }
-        h2:hover {
-            transform: scale(1.25);
-        }
-        h3:hover {
-            transform: scale(1.25);
-        }
         .emailField {
             min-width: 265px;
             max-width: 265px;
@@ -47,34 +38,66 @@
 		}
 		.NavigationField {
 			display: inline-block;
-			width: 65vw;
-			height: 225px;
+			width: 60vw;
 			justify-content: center;
 			vertical-align: middle;
-			padding: 0px 40px 200px 40px;
+			padding: 60px 0px 40px;
+            
+            background-image: url('../Assets/BG04.png');
+            box-shadow: 0px 0px 4px gray;
+            border: 2px gray ridge;
+            border-radius: 4px;
+            margin-bottom: 100px;
 		}
-        p {
-            margin: 5vw;
+        .HomeMess {
+            border: 2px white solid;
+            box-shadow: 0 0 4px white;
+			
+			display: inline-block;
+			border-radius: 2.5px;
+			font-size: 30px;
+
+            width: 75vw;
+            background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), linear-gradient(#161e5a, #15112c00 75%), url('../Assets/BG02.png');
+            background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+            background-position: left bottom, right 20vw, 0px 0px, 0px 0px;
+            background-size: 240px, 320px, 100%, 60px;
+        }
+        .FancyBox {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+            text-underline-offset: 6px;
+
+            padding: 5px;
+            margin: auto;
+            width: 25vw;
+            background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%);  
+            box-shadow: 0px 0px 4px gray;
+            border: 2px gray solid;
+            border-radius: 4px;
+        }
+        h2 {
+            margin-bottom: 5px;
+            text-shadow: 2px 2px darkblue;
         }
     </style>
     <body>
 		
         <br>
 
-        <div class="Window2" style="width: 75vw; background-image: url('../Assets/Stars.png'), url('../Assets/BG02.png');
-        background-repeat: no-repeat, repeat; background-position: right 20vw, 0px 0px; background-size: 320px, 60px;">
+        <div class="HomeMess">
             <div class="Window2" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.695) 50%), url('../Assets/BG05.png'); width: 75vw; height: 20vw; border-width: 0px 0px 2px; background-size: cover;">
                 <img src="../Assets/Logo.png" style="height: 20vw;">
             </div>
 
-            <p>
-                Hey and hello to my website !!<br>
+            <p style="margin: 5vw; color: cornflowerblue; text-shadow: 2px 2px darkblue;">
+                Hey and welcome to my website !!<br>
                 This website serves as my portfolio and personal site.<br>
                 I don't really have anything to show yet, so the site's pretty empty right now.
             </p>
 
+                <h2>Navigation</h2>
                 <div class="NavigationField">
-                  <h1>Navigation</h1><br>
                     <a href="Creations.html" class="Links" style="margin-top: 50%;">
                         <img src="../Assets/Creations.png" class="LinkButton">
                     </a>
@@ -93,17 +116,21 @@
                 </div>
             </p>
         </div>
-
-        <div class="Window" style="position: absolute; top: 175vh; width: 100vw; display: flex; justify-content: center; padding-bottom: 200px;">
+        <div class="Window" style="position:static; top: 100%; width: 100vw; margin-top: 50px; vertical-align: bottom; display: flex; justify-content: center;">
             <div class="WindowContainer">
-                <h2 style="margin-bottom: 5px; font-size: 30px;">Contact me:</h2>
-                <thought>creanblwebsite@gmail.com</thought>
+                <h2>Contact me:</h2>
+                <div class="FancyBox">
+                    <a href="mailto:creanblwebsite@gmail.com">creanblwebsite@gmail.com</a>
+                </div>
                 <br>
                 <h2>My Time:</h2>
-                <p id="time">00:00:00</p><br>
-                <h3 style="margin-bottom: 5px">
+                <div class="FancyBox">
+                    <font id="time">00:00:00</font><br>
+                    <font id="time2">00:00:00</font>
+                </div>
+                <h2>
                     Send a Private Message:
-                </h3>
+                </h2>
                 <form action="https://api.web3forms.com/submit" method="post">
                     <thought>Feel free to send your own website!</thought><br>
 
@@ -133,9 +160,33 @@
                 const UTCoffset = 3 * 60 * 60 * 1000;
                 const FinlandTime = UTCtime + UTCoffset;
                 const FinlandTime2 = new Date(FinlandTime);
+                var Year = String(FinlandTime2.getFullYear());
+                var Month = String(FinlandTime2.getMonth());
+                var Day = String(FinlandTime2.getDate());
+                var Hour = String(FinlandTime2.getHours());
+                var Mins = String(FinlandTime2.getMinutes());
+                var Secs = String(FinlandTime2.getSeconds());
 
-                document.getElementById("time").innerHTML = String(FinlandTime2);
-                document.getElementById("time2").innerHTML = String(FinlandTime2);
+                if (Secs < 10) {
+                    Secs = 0 + Secs;
+                }
+                if (Mins < 10) {
+                    Mins = 0 + Mins;
+                }
+                if (Hour < 10) {
+                    Hour = 0 + Hour;
+                }
+                if (Day < 10) {
+                    Day = 0 + Day;
+                }
+                if (Month < 10) {
+                    Month = String(0 + Month);
+                }
+
+                var dateString = Year + " -⚝- " + Month + " -⚝- " + Day;
+                var timeString = Hour + "⚝" + Mins + "⚝" + Secs;
+                document.getElementById("time").innerHTML = dateString;
+                document.getElementById("time2").innerHTML = timeString;
             }
         </script>
     </body>

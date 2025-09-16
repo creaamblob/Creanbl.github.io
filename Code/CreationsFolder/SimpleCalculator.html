@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html id="background">
     <head>
-        <title>Creations | Crean's Website</title>
+        <title>Creations -⚝- Crean's Website</title>
         <link rel="icon" href="../../Assets/Creations.png"/>
         <link rel="stylesheet" href="../style.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -33,6 +33,26 @@
         input[type=number]:hover {
             transform: scale(1.4);
             background-color: rgb(56, 52, 66);
+        }
+        .RedButton {
+            border-color: red;
+            background-image: linear-gradient(rgb(255, 0, 0) 0%, rgb(189, 22, 50) 45%, rgb(89, 2, 40) 60%);
+        }
+        .ResultText {
+            display: flex;
+            justify-content: center;
+            background-size: repeat;
+            padding: 25px;
+            border-radius: 2px;
+            
+            background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%);  
+            box-shadow: 0px 0px 4px gray;
+            border: 2px gray solid;
+            border-radius: 4px;
+            color: white;
+            animation-name: RainbowText;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
     </style>
     <body>
@@ -67,11 +87,9 @@
             <p>
                 Port of my calculator I made for my computer science website.<br>
                 The calculator is pretty limited, but I wasn't very experienced back then.<br>
-                I will not expand this, unless I need to. So don't ask.<br>
-                <thought>(Watch me expand it anyway)</thought>
             </p>
     
-            <div style="background-image: url('../../Assets/BG03.png'); border-radius: 2px;">
+            <div style="background-image: url('../../Assets/BG04.png'); border-radius: 2px;">
                 <button onclick="ChangeNumber(1)">sin</button>
                 <button onclick="ChangeNumber(2)">cos</button>
                 <button onclick="ChangeNumber(3)">tan</button>
@@ -85,13 +103,12 @@
                 <button onclick="ChangeNumber(6)">tan</button>
                 <button onclick="ChangeNumber(101)">sqrt</button>
                 <button onclick="ChangeNumber(103)">PI</button>
-                <button onclick="ChangeNumber(105)" style="background-color: red;">CE</button><br>
-                <br>
-                <button onclick="ChangeNumber(150)" style="background-color: red; font-size: 40px;">AC</button><br><br>
+                <button onclick="ChangeNumber(105)" class="RedButton">CE</button><br>
+                <button onclick="ChangeNumber(150)" class="RedButton">AC</button><br><br>
                 <button onclick="CalculateAnswer(0)">+</button> <button  onclick="CalculateAnswer(1)">-</button> <button  onclick="CalculateAnswer(10)">+%</button><br>
                 <button onclick="CalculateAnswer(2)">*</button> <button  onclick="CalculateAnswer(3)">/</button><br><br>
                         
-                <div id="Result" style="display: flex; justify-content: center; background-image: url(../../Assets/BG02.png); background-size: repeat; text-shadow: 0px 0px 2px gold, 0px 0px 4px orange, 0px 0px 12px saddlebrown; padding: 25px; border-radius: 2px;">
+                <div id="Result" class="ResultText">
                     Result</div><br><br>
                 </div>
             </div>
@@ -157,8 +174,6 @@
 
                         document.getElementById("Result").style.fontSize = "20px";
 
-                        var exhaust = "... Well, there may or may not be some...";
-
                         divideZeroCounter += 1;
 
                         // Well, I said "There may or MAY NOT be".
@@ -173,8 +188,9 @@
                             case "...": val = "... What are you doing?"; break;
                             case "... What are you doing?": val = "... You know that you can't divide by zero..."; break;
                             case "... You know that you can't divide by zero...": val = "... Are you expecting some secret dialog?"; break;
-                            case "... Are you expecting some secret dialog?": val = exhaust; break;
-                            case exhaust: val = " ... "; break;
+                            case "... Are you expecting some secret dialog?": val = "... Well, there may or may not be some..."; break;
+                            case "... Well, there may or may not be some...": val = "Alright I'm not really evil, there's actually none. Please trust me."; break;
+                            case "Alright I'm not really evil, there's actually none. Please trust me.": val = " ... "; break;
                         }
                     }
                 }
