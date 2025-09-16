@@ -98,6 +98,9 @@ p {
     .WindowContainer {
         display: none;
     }
+    .Top {
+        display: none;
+    }
 }
 
 .CRT {
@@ -140,11 +143,6 @@ p {
     transform: scale(1.5);
     background-color: rgba(255, 255, 255, 0.404);
     box-shadow: 0 0 4px white;
-}
-@media screen and (max-width: 1100px) {
-    linktab {
-        display: none;
-    }
 }
 input {
     cursor: url('../Assets/Cursor.png') 11 8, auto;
