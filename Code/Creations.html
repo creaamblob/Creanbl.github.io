@@ -17,11 +17,18 @@
         a:link { color: white; }
         a:active { color: white; }
         a:visited { color: white; }
-        
+        .CarouselBar {
+            background-color: rgb(98, 186, 253);
+            width: 10px;
+            height: 10px;
+            border-radius: 4px;
+            box-shadow: 0px 0px 4px blue;
+            border: 2px blue solid;
+        }
     </style>
     <body>
 
-        <div class="Window" style="position: fixed; top: 0vh; width: 100vw; height: 100px; display: flex; justify-content: center;">
+        <div class="MiniNavigateBar">
 
             <a href="Main.html" class="Links">
                 <img src="../Assets/Home.png" class="LinkButtonSmol">
@@ -47,11 +54,16 @@
 
         <br><br>
         
-        <div class="Window" style="width: 80vw; padding: 10px;">
-            <p>Collection of things I have created.</p>
-            
-            <h2>Projects</h2>
-            <div id="Page1" class="Page">
+        <div class="Window" style="width: 80vw; padding: 10px 0px 10px;
+        box-shadow: 0px 0px 4px gray;
+        border: 2px gray solid;
+        border-width: 0px 2px 0px;">
+            <div class="Top">
+                My Creations and Projects
+            </div>
+
+            <div class="WindowContainer">
+                <div id="Page1" class="Page">
                 <div style="width: 100%; image-rendering: pixelated;"><br>
                     <a href="CreationsFolder/TranscendentMod.html" style="width: 50%;">
                         <img src="../Assets/Blog/TranscendentModThumbnail3.png" style="vertical-align: middle; justify-content: center;">
@@ -60,8 +72,10 @@
                     <span style="font-size: 15px;">A Terraria 1.4.4 content mod for tModloader.</span>
                 </div>
             </div>
-                
-            <div style="background-color: rgb(98, 186, 253); width: 10px; height: 10px; border-radius: 4px; box-shadow: 0px 0px 4px blue; border: 2px blue solid;" id="PreviewChangeBar"></div><br>
+            
+            <div class="FancyBox" style="width: 75%;">
+                <div class="CarouselBar" id="PreviewChangeBar"></div>
+            </div><br>
             <div class="ButtonTab" style="display: inline-block; width: 100%; height: 80px;">
                 <button onclick="ChangePreview(1)" class="ChangePageButton" id="ChangePageButton1">1</button>
             </div>
@@ -84,8 +98,9 @@
 
                 </div>
             </div>
+            </div>
         </div>
-    </div>
+    </div><br>
 
     <script>
         var curPreview = 1;
@@ -94,15 +109,15 @@
         setInterval(ChangePreviewAutomatically, 8);
         function ChangePreviewAutomatically() {
             console.log(String(changePageTimer));
-            changePageTimer += 0.5;
-            if (changePageTimer > 162) {
+            changePageTimer += 0.375;
+            if (changePageTimer > 105) {
                 switch (curPreview) {
                     case 1: ChangePreview(1); break;
                 }
                 
                 changePageTimer = 0;
             }
-            document.getElementById("PreviewChangeBar").style.width = (String)(80 - changePageTimer / 2) + "vw";
+            document.getElementById("PreviewChangeBar").style.width = (String)(100 - changePageTimer) + "%";
         }
         
         function ChangePreview(goPreview) {

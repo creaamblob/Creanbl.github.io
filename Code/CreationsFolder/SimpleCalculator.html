@@ -7,12 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head><img src="../../Assets/CRT.gif" class="CRT">
     <style>
-        @font-face { font-family: WanderersLost; src: url('../../Assets/WandererLost\ Font.ttf'); }
         input {
-            font-family: WanderersLost;
-            background-color: black;
-            border-radius: 2px;
-            border: 2px white solid;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%, rgb(26, 26, 26) 85%);  
+            box-shadow: 0px 0px 4px gray;
+            border: 2px gray solid;
+            border-radius: 4px;
             color: white;
         }
         button {
@@ -42,21 +42,24 @@
             display: flex;
             justify-content: center;
             background-size: repeat;
-            padding: 25px;
-            border-radius: 2px;
-            
-            background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%);  
+            margin-top: 25px;
+            padding: 25px 0px 25px;
+            border-radius: 0px 0px 24px 24px;
+            width: 100%;
+
+            background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%, rgb(26, 26, 26) 85%);  
             box-shadow: 0px 0px 4px gray;
             border: 2px gray solid;
-            border-radius: 4px;
+            border-width: 0px 2px 2px;
             color: white;
             animation-name: RainbowText;
             animation-duration: 4s;
             animation-iteration-count: infinite;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
     </style>
     <body>
-        <div class="Window" style="position: fixed; top: 0vh; width: 100vw; height: 100px; display: flex; justify-content: center;">
+        <div class="MiniNavigateBar">
 
             <a href="../Main.html" class="Links">
                 <img src="../../Assets/Home.png" class="LinkButtonSmol">
@@ -80,22 +83,27 @@
 
         </div>
 
-        <br><br>
+        <br><br><br><br>
 
-        <div class="Window" style="max-width: 1000px;">
-
-            <p>
-                Port of my calculator I made for my computer science website.<br>
-                The calculator is pretty limited, but I wasn't very experienced back then.<br>
-            </p>
+        <div class="Window" style="height: fit-content;
+        box-shadow: 0px 0px 4px gray;
+        border: 2px gray solid;
+        border-width: 0px 2px 0px;
+        border-radius: 12.5px 50px 50px;">
+            <div class="Top">
+                <p style="margin: 25px;">
+                    Port of my calculator I made for my computer science website.<br>
+                    The calculator is pretty limited, but I wasn't very experienced back then.<br>
+                </p>
+            </div>
     
-            <div style="background-image: url('../../Assets/BG04.png'); border-radius: 2px;">
+            <div class="WindowContainer">
                 <button onclick="ChangeNumber(1)">sin</button>
                 <button onclick="ChangeNumber(2)">cos</button>
                 <button onclick="ChangeNumber(3)">tan</button>
                 <button onclick="ChangeNumber(100)">sqrt</button>
                 <button onclick="ChangeNumber(102)">PI</button>
-                <button onclick="ChangeNumber(104)" style="background-color: red;">CE</button><br>
+                <button onclick="ChangeNumber(104)" class="RedButton">CE</button><br>
                 <input id="number1" placeholder="Number 1" type="number"><br>
                 <input id="number2" placeholder="Number 2" type="number"><br>
                 <button onclick="ChangeNumber(4)">sin</button>
@@ -107,13 +115,13 @@
                 <button onclick="ChangeNumber(150)" class="RedButton">AC</button><br><br>
                 <button onclick="CalculateAnswer(0)">+</button> <button  onclick="CalculateAnswer(1)">-</button> <button  onclick="CalculateAnswer(10)">+%</button><br>
                 <button onclick="CalculateAnswer(2)">*</button> <button  onclick="CalculateAnswer(3)">/</button><br><br>
-                        
-                <div id="Result" class="ResultText">
-                    Result</div><br><br>
-                </div>
             </div>
-            
-            <script>
+            <div id="Result" class="ResultText">
+                Result
+            </div>
+        </div><br><br>
+        
+        <script>
             var num1 = document.getElementById("number1").value;
             var num2 = document.getElementById("number2").value;
             var divideZeroCounter = 0;
@@ -176,7 +184,6 @@
 
                         divideZeroCounter += 1;
 
-                        // Well, I said "There may or MAY NOT be".
                         if (document.getElementById("Result").innerHTML != " ... ") {
                             val = "..."
                         }
@@ -224,6 +231,6 @@
                 document.getElementById("Result").style.color = "white";
                 document.getElementById("Result").innerHTML = String(val);
             }
-            </script>
+        </script>
     </body>
 </html>
