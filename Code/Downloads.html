@@ -19,7 +19,7 @@
             text-decoration: none !important;
         }
         .Download {
-            background-color: rgb(39, 32, 54);
+            background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 12.5%, black 35%, rgb(26, 26, 26) 90%);
             width: 280px;
             text-align: left;
             vertical-align: middle;
@@ -29,8 +29,9 @@
             background-position-x: right;
             margin: 15px;
             padding: 10px;
-            box-shadow: 0px 0px 10px gray;
-            border: 4px gray ridge;
+            box-shadow: 0px 0px 5px gray;
+            border: 2px gray solid;
+            border-radius: 4px;
             transition: 0.25s;
         }
         .Download:hover {
@@ -43,9 +44,13 @@
             flex-wrap: wrap;
         }
         .DownloadButton {
-            border: 2px white solid;
-            border-radius: 2px;
-            padding: 5px 5px 0px;
+            box-shadow: 0px 0px 5px gray;
+            border: 2px gray solid;
+            border-radius: 4px;
+            transition: 0.25s;
+
+            background-image: linear-gradient(rgb(141, 237, 39) 0%, rgb(29, 166, 72) 12.5%, rgb(6, 86, 109) 35%, rgb(7, 137, 96) 90%);
+            padding: 15px 5px 0px;
             text-align: center;
             color: white;
             font-size: 14px;
@@ -56,12 +61,12 @@
         }
         .DownloadButton:hover {
             transform: scale(1.2);
+            border-color: white;
         }
     </style>
 
     <body>
-
-                <div class="MiniNavigateBar">
+        <div class="MiniNavigateBar">
 
             <a href="Main.html" class="Links">
                 <img src="../Assets/Home.png" class="LinkButtonSmol">
@@ -85,55 +90,66 @@
 
         </div>
 
-        <br><br>
-        <div class="Window" style="width: 50vw; padding-bottom: 10px;">
-            <p>
+        <br>
+        <div class="Window" style="width: 75vw; padding-bottom: 15px;
+        box-shadow: 0px 0px 4px gray;
+        border: 2px gray solid;
+        border-width: 0px 2px 0px;">
+            <div class="Top">
+                Downloads
+            </div>
+            <div class="WindowContainer">
+                <p>
                 Download totally not malicious files!
             </p>
             <br>
             <div class="DownloadsContainer">
                 <!--Bloodshed+-->
-                <div class="Download" style="background-image: url('../Assets/Downloads/TranscendenceIcon.png'); background-position-y: 50%;">
+                <div class="Download">
                     <font style="vertical-align: middle; color: white;">Transcendence Mod</font><br>
-                    <thought>A Terraria 1.4.4<br> content mod.</thought><br><br>
+                    <thought>A Terraria 1.4.4 content mod.</thought><br><br>
                         
                     <a href="https://github.com/creaamblob/TranscendenceMod">
-                        <div class="DownloadButton" style="background-image: linear-gradient(rgb(164, 28, 182), rgb(54, 4, 129));">
+                        <div class="DownloadButton" style="background-image: linear-gradient(rgb(252, 83, 255) 0%, rgb(130, 8, 201) 30%, rgb(74, 1, 169) 55%, rgb(107, 2, 168) 95%);">
                             Github
-                        </div>
+                        </div><br>
+                        <img src="../Assets/Downloads/TranscendenceIcon.png">
                     </a>
 
                 </div>
 
                 <!--Bloodshed+-->
-                <div class="Download" style="background-image: url('../Assets/Downloads/BloodshedPlus.png'); background-position-y: 50%;">
+                <div class="Download">
                     <font style="vertical-align: middle; color: white;">Bloodshed+</font><br>
-                    <thought>A Terraria 1.4.4 mod<br> that revamps blood<br> particles.</thought><br><br>
+                    <thought>A Terraria 1.4.4 mod that revamps blood particles.</thought><br><br>
                         
                     <a href="../Assets/Downloads/BloodshedPlus.tmod">
-                        <div class="DownloadButton" style="background-image: linear-gradient(rgb(38, 146, 44), rgb(5, 70, 87));">
+                        <div class="DownloadButton">
                             Download
                         </div>
                     </a>
                         
                     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3398127341">
-                        <div class="DownloadButton" style="background-image: linear-gradient(rgb(30, 10, 139), rgb(50, 18, 87));">
+                        <div class="DownloadButton" style="background-image: linear-gradient(rgb(65, 214, 255) 0%, rgb(56, 93, 229) 40%, rgb(4, 9, 160) 55%, rgb(33, 33, 206) 85%);">
                             Workshop
-                        </div>
+                        </div><br>
+                        <img src="../Assets/Downloads/BloodshedPlus.png">
                     </a>
                 </div>
                     
                 <!--Wanderer Lost-->
-                <div class="Download" style="background-image: url('../Assets/Downloads/WandererLost.png'); background-position-y: 50%;">
+                <div class="Download" style="font-family: WanderersLost;">
                     <font style="vertical-align: middle; color: white;">Wanderer's Lost Font</font><br>
-                    <thought style="font-size: 12px;">The pixelated font used on this website.<br>Can be used<br> freely, as long<br> as you don't claim it<br> as yours.</thought><br><br>
+                    <thought style="font-size: 12px;">The quick brown fox jumps over the lazy dog</thought><br><br>
                         
                     <a href="../Assets/WandererLost Font.ttf">
-                        <div class="DownloadButton" style="background-image: linear-gradient(rgb(38, 146, 44), rgb(5, 70, 87));">
+                        <div class="DownloadButton" style="padding-top: 5px;">
                             Download
-                        </div>
+                        </div><br>
+                        <img src="../Assets/Downloads/WandererLost.png">
                     </a>
                 </div>
+            </div><br>
             </div>
         </div>
     </body>

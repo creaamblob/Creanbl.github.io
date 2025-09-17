@@ -46,7 +46,7 @@ a:visited { color: slateblue; }
 
 p {
     font-size: 18px;
-    color: #c4e6ec;
+    color: #ffffff;
 }
 
 @keyframes RainbowText {
@@ -72,12 +72,15 @@ p {
     display: none;
     text-align: center;
     justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .SmallScreenContain {
     position: fixed;
     left: 0%;
+    top: 25%;
     background-color: darkred; 
-    width: 100vw;
+    width: 100%;
+    margin: auto;
 }
 @media screen and (max-width: 850px) {
     .SmallScreenWarn {
@@ -192,6 +195,7 @@ audio {
     border: 2px gray solid;
     width: 95%;
     margin: auto;
+    image-rendering: pixelated;
     border-radius: 2px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -202,7 +206,7 @@ img {
     border-radius: 5px;
 }
 .Window {
-    background-color: #0000009d;
+    background-color: #0000006c;
 
     vertical-align:middle;
     display: inline-block;
