@@ -30,6 +30,13 @@ a:link { color: rgb(98, 186, 253); }
 a:active { color: royalblue; }
 a:visited { color: slateblue; }
 
+.StarDivider {
+    font-family: arial;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 4px rgb(98, 186, 253);
+}
+
 .Title {
     font-size: 50px;
 }
