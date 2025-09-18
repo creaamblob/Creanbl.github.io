@@ -326,14 +326,15 @@ img {
     vertical-align: middle;
   }
   .ChangePageButton:hover {
-    transform: scale(1.25);
+    transform: scale(1.175);
+    color: white;
     background-color: rgb(133, 142, 168);
   }
   .ChangePageButton.active {
     cursor: url('../Assets/Cursor_NuhUh.png') 11 8, auto;
     color: rgb(98, 186, 253);
     border-color: rgb(98, 186, 253);
-    transform: scale(1.25);
+    transform: scale(1.375);
     background-color: white;
   }
   thought {
