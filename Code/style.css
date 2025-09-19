@@ -111,6 +111,9 @@ p {
     .Top {
         display: none;
     }
+    .MiniNavigateBar {
+        display: none;
+    }
 }
 
 .CRT {
@@ -203,7 +206,7 @@ audio {
     width: 95%;
     margin: auto;
     image-rendering: pixelated;
-    border-radius: 2px;
+    border-radius: 4px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 iframe {
@@ -250,7 +253,7 @@ img {
     background-color: #0000009d;
     vertical-align: middle;
     display: flex;
-    border-radius: 12.5px;
+    border-radius: 0px 0px 12.5px 12.5px;
 }
 .Top {
     background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%, rgb(26, 26, 26) 85%);
