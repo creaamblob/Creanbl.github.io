@@ -6,39 +6,18 @@
         <link rel="stylesheet" href="Code/style.css" rel="stylesheet"/>
     </head>
 
-    <style>
-       @font-face { font-family: WanderersLost; src: url('Assets/WandererLost\ Font.ttf'); }
-       h3 {
-        transition: 0.25s;
-       }
-       h3:hover {
-        transform: scale(1.33);
-       }
-    </style>
     <body>
         <center style="vertical-align: middle;">
             <br><br>
             <div class="Window" style="padding: 10px;">
-                <h4 style="text-decoration: none;">You will be automatically redirected after <font style="color: gold;" id="Timer">10</font> seconds.</h4>
-                <p>
-                    If you're on MOBILE, PLEASE enable DESKTOP VIEW.<br>
-                    I didn't bother with adding proper mobile support.
-                </p>
+
                  <a href="Code/Main.html" style="text-underline-offset: 10px; text-decoration: none;">
                     <h3>Enter the site</h3>
                 </a>
+
             </div>
             <script>
-                var TimerAmount = 10;
-                setInterval(UpdateTimer, 1000);
-
-                function UpdateTimer() {
-                    TimerAmount -= 1;
-                    if (TimerAmount < 1) {
-                        window.location.replace("Code/Main.html");
-                    }
-                    document.getElementById("Timer").innerHTML = TimerAmount;
-                }
+            window.location.replace("Code/Main.html");
             </script>
         </center>
     </body>
