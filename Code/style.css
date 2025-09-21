@@ -128,8 +128,8 @@ p {
     text-decoration: none;
 }
 .LinkButton {
-    width: 126px;
-    height: 126px;
+    width: 128px;
+    height: 128px;
     transform: scale(1.33);
     image-rendering: pixelated;
     transition: 0.25s;
@@ -144,8 +144,8 @@ p {
     box-shadow: 0 0 4px white;
 }
 .LinkButtonSmol {
-    width: 54px;
-    height: 54px;
+    width: 56px;
+    height: 56px;
     image-rendering: pixelated;
     margin: 25px 0px 5px;
     transition: 0.25s;
