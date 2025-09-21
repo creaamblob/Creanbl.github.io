@@ -1,5 +1,5 @@
 My personal website, doesn't really have anything for the time being
-<img width="1918" height="879" alt="Preview" src="https://github.com/user-attachments/assets/4eb918e5-b7f2-4b4d-a746-8213e0d426bf" />
+<img width="1919" height="881" alt="Preview" src="https://github.com/user-attachments/assets/c74fba30-e1f8-4b49-a7fc-e93a9ce4f713" />
 
 URL:
 https://creaamblob.github.io/Creanbl.github.io
