@@ -17,8 +17,8 @@
     <style>
         @font-face { font-family: WanderersLost; src: url('../Assets/WandererLost\ Font.ttf'); }
         .emailField {
-            min-width: 265px;
-            max-width: 265px;
+            min-width: 70%;
+            max-width: 70%;
             height: 20px;
             min-height: 20px;
             max-height: 20px;
@@ -58,8 +58,8 @@
 			border-radius: 4px;
 			font-size: 30px;
 
-            width: 75vw;
-            background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), linear-gradient(#080c28, #15112c00), url('../Assets/BG07.png'), url('../Assets/BG02.png');
+            width: 62.5vw;
+            background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), linear-gradient(#040438a8, #009dff28), url('../Assets/BG07.png'), url('../Assets/BG02.png');
             background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat;
             background-position: left bottom, right 22.5vw, 0px 0px, 0px 0px, 0px 0px;
             background-size: 240px, 320px, 100%, 75px, 60px;
@@ -69,106 +69,115 @@
         h2 {
             margin-bottom: 5px;
             text-shadow: 2px 2px darkblue;
+            overflow-wrap: anywhere;
         }
     </style>
     <body>
 		
         <br>
 
-        <div class="Window" style="width: 80vw; padding-bottom: 15px;
-        box-shadow: 0px 0px 4px gray;
-        border: 2px gray solid;
-        border-width: 0px 2px 0px;">
-            <div class="Top" style="top: -20px;">
-                Home
+        <div style="display: flex; justify-content: center;">
+            <div class="Window" style="width: 65vw; margin-right: 15px; padding-bottom: 15px;">
+                <div class="Top" style="top: -20px;">
+                    Home
+                </div>
+                
+                <div class="HomeMess">
+                    <div class="Window2" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.695) 50%), url('../Assets/BG05.png'); width: 62.5vw; height: 20vw; border-width: 0px 0px 2px; background-size: cover;">
+                        <img src="../Assets/Logo.png" style="height: 20vw;">
+                    </div>
+                    
+                    <p style="margin: 3.75vw; color: cornflowerblue; text-shadow: 2px 2px darkblue;">
+                        <font class="StarDivider">
+                            ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈<br>
+                        </font>
+                        
+                        Hey and welcome to my website !!<br>
+                        This website serves as my portfolio and personal site.<br>
+                        I don't really have anything to show yet, so the site's pretty empty right now, sorry bout that.<br><br>
+                        
+                        <font class="StarDivider">
+                            ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈<br>
+                        </font>
+                    </p><br>
+                    
+                    <h2>Navigation</h2>
+                    <div class="NavigationField">
+                        <a href="Creations.html" class="Links" style="margin-top: 50%;">
+                            <img src="../Assets/Creations.png" class="LinkButton">
+                        </a>
+                        
+                        <a href="Blogs.html" class="Links" style="margin-top: 50%;">
+                            <img src="../Assets/Blog.png" class="LinkButton">
+                        </a>
+                        
+                        <a href="Info.html" class="Links" style="margin-top: 50%;">
+                            <img src="../Assets/Info.png" class="LinkButton">
+                        </a>
+                        
+                        <a href="Misc.html" class="Links" style="margin-top: 50%;">
+                            <img src="../Assets/Misc.png" class="LinkButton">
+                        </a>
+                    </div><br>
+                    
+                    <font class="StarDivider">
+                        ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈<br>
+                    </font>
+                    
+                    <div class="NavigationField" style="margin-bottom: 150px;">
+                        <a href="https://www.youtube.com/@Creanbl" class="Links" style="margin-top: 50%;">
+                            <img src="../Assets/YoutubeLogo.png" class="LinkButton">
+                        </a>
+                        
+                        <a href="https://steamcommunity.com/id/Creanbl/" class="Links" style="margin-top: 50%;">
+                            <img src="../Assets/SteamLogo.png" class="LinkButton">
+                        </a>
+                    </div>
+                </div>
             </div>
-            
-            <div class="HomeMess">
 
-            <div class="Window2" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.695) 50%), url('../Assets/BG05.png'); width: 75vw; height: 20vw; border-width: 0px 0px 2px; background-size: cover;">
-                <img src="../Assets/Logo.png" style="height: 20vw;">
-            </div>
-
-            <p style="margin: 3.75vw; color: cornflowerblue; text-shadow: 2px 2px darkblue;">
-                <font class="StarDivider">
-                    ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈<br>
-                </font>
-
-                Hey and welcome to my website !!<br>
-                This website serves as my portfolio and personal site.<br>
-                I don't really have anything to show yet, so the site's pretty empty right now, sorry bout that.<br><br>
-
-                <font class="StarDivider">
-                    ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈<br>
-                </font>
-            </p><br>
-
-                <h2>Navigation</h2>
-                <div class="NavigationField">
-                    <a href="Creations.html" class="Links" style="margin-top: 50%;">
-                        <img src="../Assets/Creations.png" class="LinkButton">
-                    </a>
-        
-                    <a href="Blogs.html" class="Links" style="margin-top: 50%;">
-                        <img src="../Assets/Blog.png" class="LinkButton">
-                    </a>
-        
-                    <a href="Info.html" class="Links" style="margin-top: 50%;">
-                        <img src="../Assets/Info.png" class="LinkButton">
-                    </a>
-    
-                    <a href="Misc.html" class="Links" style="margin-top: 50%;">
-                        <img src="../Assets/Misc.png" class="LinkButton">
-                    </a>
-                </div><br>
-                <font class="StarDivider">
-                    ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈<br>
-                </font>
-                <div class="NavigationField" style="margin-bottom: 150px;">
-                    <a href="https://www.youtube.com/@Creanbl" class="Links" style="margin-top: 50%;">
-                        <img src="../Assets/YoutubeLogo.png" class="LinkButton">
-                    </a>
-        
-                    <a href="https://steamcommunity.com/id/Creanbl/" class="Links" style="margin-top: 50%;">
-                        <img src="../Assets/SteamLogo.png" class="LinkButton">
-                    </a>
+            <div class="Window" style="width: 30vw; height: fit-content; padding-bottom: 15px;">
+                <div class="Top">
+                    Extras
                 </div>
-            </p>
-        </div>
-        </div>
-        
-        <div class="Window" style="position:static; top: 100%; width: 100vw; margin-top: 50px; vertical-align: bottom; display: flex; justify-content: center;">
-            <div class="WindowContainer">
-                <h2>Contact me:</h2>
-                <div class="FancyBox">
-                    <a href="mailto:creanblwebsite@gmail.com">creanblwebsite@gmail.com</a>
-                </div>
-                <br>
-                <h2>My Time:</h2>
-                <div class="FancyBox" style="width: 30%;">
-                    <font id="time">00:00:00</font><br>
-                    <font id="time2">00:00:00</font>
-                </div>
-                <h2>
-                    Send a Private Message:
-                </h2>
-                <form action="https://api.web3forms.com/submit" method="post">
-                    <thought>★★ Feel free to send your own website! ★★</thought><br>
+                
+                <div class="HomeMess" style="width: 95%;">
+                    <h2>Contact me:</h2>
 
-                    <textarea name="name" id="Spamton" class="emailField" style="display: none;" required></textarea>
-                    <textarea name="message" placeholder="Text field" class="emailField" style="height: 60px; min-height: 60px; max-height: 240px;" required></textarea>
+                    <div class="FancyBox" style="width: 80%; overflow-wrap: anywhere;">
+                        <a href="mailto:creanblwebsite@gmail.com">creanblwebsite@gmail.com</a>
+                    </div>
+                    
                     <br>
-    
-                    <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
-                    <input type="hidden" name="subject" value="CreanWebsite Message New!!">
-                    <input type="hidden" name="redirect" value="https://creaamblob.github.io/Creanbl.github.io/Code/SendSuccess.html">
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                    <input type="hidden" name="from_name" value="CreanWebsite">
-                    <div class="h-captcha" data-captcha="true"></div>
-                    <button type="submit" id="submitEmail">Send</button>
-                </form>
+                    
+                    <h2>My Time:</h2>
+                    <div class="FancyBox" style="width: 60%;">
+                        <font id="time">00:00:00</font><br>
+                        <font id="time2">00:00:00</font>
+                    </div>
+                    
+                    <h2>
+                        Send a Private Message:
+                    </h2>
+                    
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <thought>★★ Feel free to send your own website! ★★</thought><br>
+                        
+                        <textarea name="name" id="Spamton" class="emailField" style="display: none;" required></textarea>
+                        <textarea name="message" placeholder="Text field" class="emailField" style="height: 60px; min-height: 60px; max-height: 240px;" required></textarea>
+                        <br>
+                        
+                        <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
+                        <input type="hidden" name="subject" value="CreanWebsite Message New!!">
+                        <input type="hidden" name="redirect" value="https://creaamblob.github.io/Creanbl.github.io/Code/SendSuccess.html">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <input type="hidden" name="from_name" value="CreanWebsite">
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <button type="submit" id="submitEmail">Send</button>
+                    </form>
+                </div>
             </div>
-        </div>
+        </div><br>
 
         <script>
             setInterval(UpdateTime, 1);
