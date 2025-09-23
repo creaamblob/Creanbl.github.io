@@ -165,7 +165,7 @@ a {
 }
 textarea {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%, rgb(26, 26, 26) 85%);
+    background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, rgb(25, 25, 25) 55%, rgb(25, 25, 25) 80%, rgb(40, 40, 40) 100%);
     box-shadow: 0px 0px 5px gray;
     border: 2px gray solid;
     border-radius: 4px;
@@ -180,7 +180,7 @@ textarea:hover {
 }
 button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%, rgb(26, 26, 26) 85%);  
+    background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, rgb(25, 25, 25) 55%, rgb(25, 25, 25) 80%, rgb(40, 40, 40) 100%);  
     box-shadow: 0px 0px 4px gray;
     border: 2px gray solid;
     border-radius: 4px;
@@ -216,7 +216,8 @@ img {
     border-radius: 5px;
 }
 .Window {
-    background-color: #0000006c;
+    background-color: #0000008f;
+    backdrop-filter: blur(4px);
     box-shadow: 0px 0px 4px gray; border: 2px gray solid; border-width: 0px 2px 0px;
 
     vertical-align:middle;
@@ -237,7 +238,7 @@ img {
     padding: 5px;
     margin: auto;
     width: 40%;
-    background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%, rgb(26, 26, 26) 85%);  
+    background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, rgb(25, 25, 25) 55%, rgb(25, 25, 25) 80%, rgb(40, 40, 40) 100%);  
     box-shadow: 0px 0px 4px gray;
     border: 2px gray solid;
     border-radius: 4px;
@@ -257,16 +258,29 @@ img {
     border-radius: 0px 0px 12.5px 12.5px;
 }
 .Top {
-    background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, black 60%, rgb(26, 26, 26) 85%);
+    background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, rgb(25, 25, 25) 55%, rgb(25, 25, 25) 80%, rgb(40, 40, 40) 100%);
     border-radius: 24px 24px 0px 0px;
     padding-bottom: 6px;
     position: relative;
     top: -20px;
+    display: flex;
+    justify-content: center;
             
     box-shadow: 0px 0px 4px gray;
     border: 2px gray solid;
     border-width: 2px 2px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Top::before {
+    width: 85%;
+    height: 50%;
+    border-radius: 15px;
+    filter: blur(2px);
+
+    position: absolute;
+    top: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.125));
+    content: "";
 }
 .TextBox {
     background-color: #000000;
