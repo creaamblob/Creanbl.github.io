@@ -89,32 +89,6 @@ p {
     width: 100%;
     margin: auto;
 }
-@media screen and (max-width: 850px) {
-    .SmallScreenWarn {
-        display: flex;
-    }
-    .CRT {
-        display: none;
-    }
-    body {
-        overflow: hidden;
-    }
-    .Window {
-        display: none;
-    }
-    .LinkButton {
-        display: none;
-    }
-    .WindowContainer {
-        display: none;
-    }
-    .Top {
-        display: none;
-    }
-    .MiniNavigateBar {
-        display: none;
-    }
-}
 
 .CRT {
     position: fixed;
@@ -362,3 +336,33 @@ img {
   #linkWindow {
     border-radius: 2px;
   }
+
+  @media screen and (max-width: 550px) {
+    .SmallScreenWarn {
+        display: flex;
+    }
+    .CRT {
+        display: none;
+    }
+    body {
+        overflow: hidden;
+    }
+    .MiniNavigateBar {
+        display: none;
+    }
+    .Window {
+        display: none;
+    }
+    .LinkButton {
+        display: none;
+    }
+    .WindowContainer {
+        display: none;
+    }
+    .Top {
+        display: none;
+    }
+    .MiniNavigateBar {
+        display: none;
+    }
+}
