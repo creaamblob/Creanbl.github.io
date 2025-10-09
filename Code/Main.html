@@ -59,10 +59,11 @@
 			font-size: 30px;
 
             width: 62.5vw;
-            background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), linear-gradient(#040438a8, #009dff28), url('../Assets/BG07.png'), url('../Assets/BG02.png');
+            background-blend-mode: normal, normal, normal, soft-light, normal;
+            background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), linear-gradient(#040438a8, #009dff28), url('../Assets/BG07.gif'), url('../Assets/BG02.png');
             background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat;
-            background-position: left bottom, right 22.5vw, 0px 0px, 0px 0px, 0px 0px;
             background-size: 240px, 320px, 100%, 75px, 60px;
+            background-position: left bottom, right 22.5vw, 0px 0px, 0px 0px, 0px 0px;
             font-family: WanderersLost;
             image-rendering: pixelated;
         }
@@ -82,12 +83,12 @@
                     Home
                 </div>
                 
-                <div class="HomeMess">
+                <div class="HomeMess" id="HomeMess">
                     <div class="Window2" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.695) 50%), url('../Assets/BG05.png'); width: 62.5vw; height: 20vw; border-width: 0px 0px 2px; background-size: cover;">
                         <img src="../Assets/Logo.png" style="height: 20vw;">
                     </div>
                     
-                    <p style="margin: 3.75vw; color: cornflowerblue; text-shadow: 2px 2px darkblue;">
+                    <p style="margin: 3.75vw; color: cornflowerblue; text-shadow: 2px 2px darkblue; border-radius: 8px; background-color: #0000008f;">
                         <font class="StarDivider">
                             ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈<br>
                         </font>
@@ -153,7 +154,7 @@
                     <h2>My Time:</h2>
                     <div class="FancyBox" style="width: 60%;">
                         <font id="time">00:00:00</font><br>
-                        <font id="time2">00:00:00</font>
+                        <font id="time2">00:00:00</font> <img src="../Assets/Clock.gif">
                     </div>
                     
                     <h2>
@@ -174,15 +175,15 @@
                         <input type="hidden" name="from_name" value="CreanWebsite">
                         <div class="h-captcha" data-captcha="true"></div>
                         <button type="submit" id="submitEmail">Send</button>
-                    </form>
-                </div><br><br>
-                 <map name="win7widget-compact">
-                    <area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="0,0,216,29" alt="no ai webring" title="no ai webring">
-                    <area href="https://baccyflap.com/noai/?prv&s=cbl" target="_top" shape="rect" coords="102,45,199,71" alt="previous" title="previous">
-                    <area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="102,81,199,105" alt="random" title="random">
-                    <area href="https://baccyflap.com/noai/?nxt&s=cbl" target="_top" shape="rect" coords="102,116,199,141" alt="next" title="next">
-                </map>
-                <img usemap="#win7widget-compact" src="https://baccyflap.com/noai/win7widget-compact.gif" alt="a Windows 7 style dialog box titled 'The No AI Webring' with a little icon showing a computer chip in a rubbish bin. beside it are three clickable buttons, labeled Previous, Random and Next"> 
+                    </form><br>
+                    <map name="win7widget-compact">
+                        <area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="0,0,216,29" alt="no ai webring" title="no ai webring">
+                        <area href="https://baccyflap.com/noai/?prv&s=cbl" target="_top" shape="rect" coords="102,45,199,71" alt="previous" title="previous">
+                        <area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="102,81,199,105" alt="random" title="random">
+                        <area href="https://baccyflap.com/noai/?nxt&s=cbl" target="_top" shape="rect" coords="102,116,199,141" alt="next" title="next">
+                    </map>
+                    <img usemap="#win7widget-compact" src="https://baccyflap.com/noai/win7widget-compact.gif" alt="a Windows 7 style dialog box titled 'The No AI Webring' with a little icon showing a computer chip in a rubbish bin. beside it are three clickable buttons, labeled Previous, Random and Next"> 
+                </div>
             </div>
         </div><br>
 

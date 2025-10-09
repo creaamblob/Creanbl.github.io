@@ -180,14 +180,14 @@ audio {
     width: 95%;
     margin: auto;
     image-rendering: pixelated;
-    border-radius: 4px;
+    border-radius: 8px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 iframe {
-    border-radius: 5px;
+    border-radius: 8px;
 }
 img {
-    border-radius: 5px;
+    border-radius: 8px;
 }
 .Window {
     background-color: #0000008f;
