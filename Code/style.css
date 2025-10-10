@@ -189,8 +189,33 @@ iframe {
 img {
     border-radius: 8px;
 }
+.StarBlanket {
+    border: 2px gray solid;
+    box-shadow: 0 0 4px gray;
+    border-width: 0px 2px 2px;
+			
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 30px;
+
+    width: 62.5vw;
+    background-blend-mode: normal, normal, normal, soft-light, normal;
+    background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), linear-gradient(#000000a8, #009dff28), url('../Assets/BG07.gif'), url('../Assets/BG02.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat;
+    background-size: 240px, 320px, 100%, 75px, 60px;
+    background-position: left bottom, right 22.5vw, 0px 0px, 0px 0px, 0px 0px;
+    font-family: WanderersLost;
+    image-rendering: pixelated;
+}
+.CoolParagraph {
+    margin: 3.75vw;
+    color: cornflowerblue;
+    text-shadow: 2px 2px darkblue;
+    border-radius: 8px;
+    background-color: #0000008e;
+}
 .Window {
-    background-color: #0000008f;
+    background-color: #0000008e;
     backdrop-filter: blur(4px);
     box-shadow: 0px 0px 4px gray; border: 2px gray solid; border-width: 0px 2px 0px;
 
@@ -220,7 +245,7 @@ img {
 .MiniNavigateBar {
     position:sticky;
     top: 0vh;
-    width: 100vw;
+    width: 99vw;
     height: 100px;
     margin: auto;
     justify-content: center;
