@@ -1,4 +1,4 @@
-My personal website, doesn't really have anything for the time being
+My personal website, has a few things at the moment ★
 <img width="1919" height="881" alt="Preview" src="https://github.com/user-attachments/assets/c74fba30-e1f8-4b49-a7fc-e93a9ce4f713" />
 
 URL:
