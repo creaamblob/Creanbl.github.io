@@ -148,7 +148,7 @@ textarea {
     transition: 0.25s;
 }
 textarea:hover {
-    transform: scale(1.25);
+    transform: scale(1.125);
     box-shadow: 0px 0px 8px white;
     border-color: white;
 }
