@@ -72,6 +72,27 @@
             text-shadow: 2px 2px darkblue;
             overflow-wrap: anywhere;
         }
+         #aero-ring {
+            background: linear-gradient(to bottom, #404040 0%, #000000 100%);
+            border-radius: 10px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.5),
+            inset 0 2px 1px rgba(255, 255, 255, 0.15),
+            inset 0 -2px 1px rgba(0, 0, 0, 0.35);
+            font-family: sans-serif;
+            margin: 10px auto 0px auto;
+            max-width: 15rem;
+            padding: 0.75rem;
+        }
+        #aero-ring a,
+        #aero-ring a:visited {
+            color: white !important;
+            text-decoration: none;
+        }
+        #aero-ring a:focus,
+        #aero-ring a:hover,
+        #aero-ring a:active {
+            color: lightgrey !important;
+        }
     </style>
     <body>
 		
@@ -176,6 +197,11 @@
                         <div class="h-captcha" data-captcha="true"></div>
                         <button type="submit" id="submitEmail">Send</button>
                     </form><br>
+
+                    <!--Webrings-->
+                    <div id="aero-ring">
+                        <script src="https://frutigeraeroarchive.org/javascript/aero-webring.js"></script>
+                    </div><br>
                     <map name="win7widget-compact">
                         <area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="0,0,216,29" alt="no ai webring" title="no ai webring">
                         <area href="https://baccyflap.com/noai/?prv&s=cbl" target="_top" shape="rect" coords="102,45,199,71" alt="previous" title="previous">
@@ -183,6 +209,7 @@
                         <area href="https://baccyflap.com/noai/?nxt&s=cbl" target="_top" shape="rect" coords="102,116,199,141" alt="next" title="next">
                     </map>
                     <img usemap="#win7widget-compact" src="https://baccyflap.com/noai/win7widget-compact.gif" alt="a Windows 7 style dialog box titled 'The No AI Webring' with a little icon showing a computer chip in a rubbish bin. beside it are three clickable buttons, labeled Previous, Random and Next"> 
+
                 </div>
             </div>
         </div><br>
