@@ -55,6 +55,7 @@
             overflow-wrap: anywhere;
         }
          #aero-ring {
+            filter: invert(1);
             background: linear-gradient(to bottom, #404040 0%, #000000 100%);
             border-radius: 10px;
             box-shadow: 0 0 4px rgba(0, 0, 0, 0.5),
@@ -160,10 +161,7 @@
                         <font id="time2">00:00:00</font> <img src="../Assets/Clock.gif">
                     </div>
                     
-                    <h2>
-                        Send a PM
-                    </h2>
-                    
+                    <h2>Send a PM</h2>
                     <form action="https://api.web3forms.com/submit" method="post">
                         <thought>★★ Feel free to send your own website! ★★</thought><br>
                         
@@ -178,9 +176,9 @@
                         <input type="hidden" name="from_name" value="CreanWebsite">
                         <div class="h-captcha" data-captcha="true"></div>
                         <button type="submit" id="submitEmail">Send</button>
-                    </form><br>
+                    </form>
 
-                    <!--Webrings-->
+                    <h2>Webrings</h2>
                     <div id="aero-ring">
                         <script src="https://frutigeraeroarchive.org/javascript/aero-webring.js"></script>
                     </div><br>
@@ -190,8 +188,7 @@
                         <area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="102,81,199,105" alt="random" title="random">
                         <area href="https://baccyflap.com/noai/?nxt&s=cbl" target="_top" shape="rect" coords="102,116,199,141" alt="next" title="next">
                     </map>
-                    <img usemap="#win7widget-compact" src="https://baccyflap.com/noai/win7widget-compact.gif" alt="a Windows 7 style dialog box titled 'The No AI Webring' with a little icon showing a computer chip in a rubbish bin. beside it are three clickable buttons, labeled Previous, Random and Next"> 
-
+                    <img usemap="#win7widget-compact" src="https://baccyflap.com/noai/win7widget-compact.gif" alt="a Windows 7 style dialog box titled 'The No AI Webring' with a little icon showing a computer chip in a rubbish bin. beside it are three clickable buttons, labeled Previous, Random and Next"><br>
                 </div>
             </div>
         </div><br>
@@ -208,7 +205,7 @@
                 const FinlandTime = UTCtime + UTCoffset;
                 const FinlandTime2 = new Date(FinlandTime);
                 var Year = String(FinlandTime2.getFullYear());
-                var Month = String(FinlandTime2.getMonth());
+                var Month = String(FinlandTime2.getMonth() + 1);
                 var Day = String(FinlandTime2.getDate());
                 var Hour = String(FinlandTime2.getHours());
                 var Mins = String(FinlandTime2.getMinutes());
