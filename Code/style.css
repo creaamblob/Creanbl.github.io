@@ -200,7 +200,7 @@ img {
 
     width: 62.5vw;
     background-blend-mode: normal, normal, normal, soft-light, normal;
-    background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), linear-gradient(#000000a8, #009dff28), url('../Assets/BG07.gif'), url('../Assets/BG02.png');
+    background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), linear-gradient(#000000a8, #009dff3d), url('../Assets/BG07.gif'), url('../Assets/BG02.png');
     background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat;
     background-size: 240px, 320px, 100%, 75px, 60px;
     background-position: left bottom, right 22.5vw, 0px 0px, 0px 0px, 0px 0px;

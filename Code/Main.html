@@ -55,9 +55,10 @@
             overflow-wrap: anywhere;
         }
          #aero-ring {
-            filter: invert(1);
-            background: linear-gradient(to bottom, #404040 0%, #000000 100%);
+            background-image: linear-gradient(#9fe2ff75 0%, #9fe2ff75 50%, #7d889f75 50%, #7d889f75 75%, #9fd2ff75), url('../Assets/BG09.png');
+            background-size: 100%;
             border-radius: 10px;
+            text-shadow: 0px 0px 4px lightseagreen, 0px 0px 4px lightseagreen;
             box-shadow: 0 0 4px rgba(0, 0, 0, 0.5),
             inset 0 2px 1px rgba(255, 255, 255, 0.15),
             inset 0 -2px 1px rgba(0, 0, 0, 0.35);
@@ -65,16 +66,22 @@
             margin: 10px auto 0px auto;
             max-width: 15rem;
             padding: 0.75rem;
+            border: outset 2px lightseagreen;
+        }
+        #aero-ring:hover {
+            box-shadow: 0px 0px 0px 2px white, 0px 0px 32px lightseagreen;
         }
         #aero-ring a,
         #aero-ring a:visited {
-            color: white !important;
+            color: rgb(255, 255, 255) !important;
             text-decoration: none;
         }
         #aero-ring a:focus,
         #aero-ring a:hover,
         #aero-ring a:active {
-            color: lightgrey !important;
+            transform: scale(1.2);
+            color: lightseagreen !important;
+            text-shadow: 0px 0px 4px white, 0px 0px 4px white;
         }
     </style>
     <body>
@@ -88,7 +95,7 @@
                 </div>
                 
                 <div class="StarBlanket" id="StarBlanket">
-                    <div class="Window2" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.695) 50%), url('../Assets/BG05.png'); width: 62.5vw; height: 20vw; border-width: 0px 0px 2px; background-size: cover;">
+                    <div class="Window2" style="background-image: url('../Assets/BG05.png'); width: 62.5vw; height: 20vw; border-width: 0px 0px 2px; background-size: cover;">
                         <img src="../Assets/Logo.png" style="height: 20vw;">
                     </div>
                     
@@ -123,6 +130,7 @@
                         <a href="Misc.html" class="Links" style="margin-top: 50%;">
                             <img src="../Assets/Misc.png" class="LinkButton">
                         </a>
+
                     </div><br>
                     
                     <font class="StarDivider">
