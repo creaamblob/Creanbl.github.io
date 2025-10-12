@@ -1,10 +1,4 @@
 html {
-    background-color: black;
-    background: url('../Assets/BG.png') repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     cursor: url('../Assets/Cursor.png') 11 2, auto;
 }
 body {
@@ -219,7 +213,7 @@ img {
 .CoolParagraph {
     margin: 3.75vw;
     color: cornflowerblue;
-    text-shadow: 2px 2px darkblue;
+    text-shadow: 2px 2px blue;
     border-radius: 8px;
     background-color: #0000008e;
 }
@@ -261,9 +255,9 @@ img {
     z-index: 1;
 
     background-image: linear-gradient(#0000009d, black);
+    border-radius: 0px 0px 12.5px 12.5px;
     vertical-align: middle;
     display: flex;
-    border-radius: 0px 0px 12.5px 12.5px;
 }
 .Top {
     background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, rgb(25, 25, 25) 55%, rgb(25, 25, 25) 80%, rgb(40, 40, 40) 100%);
