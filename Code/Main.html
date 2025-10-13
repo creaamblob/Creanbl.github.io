@@ -5,10 +5,11 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;">
+
     <div class="SmallScreenWarn">
         <div class="SmallScreenContain">
             Your screen is too small!<br>
-            Please stretch the window or enable desktop mode in your browser!<br>
+            Please stretch the window or enable desktop mode in your mobile browser!<br>
             (Usually found in a triple-dot dropdown)
         </div>
     </div>
@@ -17,7 +18,7 @@
         <link rel="icon" href="../Assets/Creanbl.gif"/>
         <link rel="stylesheet" href="style.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    </head><img src="../Assets/CRT.gif" class="CRT">
+    </head>
 
     <style>
         .container {
@@ -36,24 +37,27 @@
             transform: translate(-50%, -50%);
             bottom: -725px;
             line-height: 0;
-            background-image: linear-gradient(rgba(32, 32, 32, 0.875), black);
+            background-image: linear-gradient(rgba(32, 32, 32, 0.5), black);
             border-radius: 12.5px 12.5px 0px 0px;
             width: 90%;
             height: 500px;
             transition: 0.5s;
             box-shadow: 0px 0px 10px gray;
             border: 2px gray solid;
+            backdrop-filter: blur(8px);
         }
         .ThemeWindow:hover {
             bottom: -400px;
         }
         .ThemeButton {
-            padding: 5px;
+            padding: 10px;
             margin: 3px;
             background-size: cover;
-            text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 4px black;
+            text-shadow: -1px -1px black, 1px -1px black, 1px 1px black, -1px 1px 4px black;
         }
     </style>
+
+    <body>
 
     <div class="container">
         <iframe src="Home.html" style="width: 100%; height: 100%; border: 0px;"></iframe>
@@ -62,19 +66,22 @@
     <div class="ThemeWindow">
         <img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"><font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Themes</font><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;">
 
-        <div style="width: 70%; display: flex; flex-wrap: wrap; justify-content: center; margin: auto;">
+        <div style="width: 80%; display: flex; flex-wrap: wrap; justify-content: center; margin: auto;">
 
-            <button class="ThemeButton" onclick="ChangeTheme(0)" style="background-image: url('../Assets/BG.png');">Theme : Lake (Default Theme)</button>
-            <button class="ThemeButton" onclick="ChangeTheme(1)" style="background-image: url('../Assets/BG09.png');">Theme : Clouds</button>
-            <button class="ThemeButton" onclick="ChangeTheme(2)" style="background-image: url('../Assets/BG06.png');">Theme : Autumn</button>
-            <button class="ThemeButton" onclick="ChangeTheme(3)" style="background-image: url('../Assets/BG05.png');">Theme : Celestial</button>
-            <button class="ThemeButton" onclick="ChangeTheme(4)" style="background-image: url('../Assets/BG08.png');">Theme : Seraphic (Terraria Mods)</button>
-            <button class="ThemeButton" onclick="ChangeTheme(5)" style="background-image: url('../Assets/Creations/CosmicFields.png');">Theme : Fields (Terraria Mods)</button>
-            <button class="ThemeButton" onclick="ChangeTheme(6)" style="background-image: url('../Assets/BG10.gif');">Theme : The Third Sanctuary (Deltarune)</button>
-            <button class="ThemeButton" onclick="ChangeTheme(7)" style="background-image: url('../Assets/BG11.gif');">Theme : WELCOME TO THE CITY (Deltarune)</button>
-            <button class="ThemeButton" onclick="ChangeTheme(8)" style="background-image: url('../Assets/BG12.png');">Theme : Panic Betrayer (Ultrakill)</button>
-            <button class="ThemeButton" onclick="ChangeTheme(9)" style="background-image: url('../Assets/BG13.gif');">Theme : City of Tears (Hollow Knight)</button>
-            <button class="ThemeButton" onclick="ChangeTheme(10)" style="background-image: url('../Assets/BG14.gif');">Theme : Greenpath (Hollow Knight)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(0)" style="background-image: url('../Assets/BG.png');">Lake (Default Theme)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(1)" style="background-image: url('../Assets/BG09.png');">Clouds</button>
+            <button class="ThemeButton" onclick="ChangeTheme(2)" style="background-image: url('../Assets/BG06.png');">Autumn</button>
+            <button class="ThemeButton" onclick="ChangeTheme(11)" style="background-image: url('../Assets/BG15.png');">Grass</button>
+            <button class="ThemeButton" onclick="ChangeTheme(3)" style="background-image: url('../Assets/BG05.png');">Celestial</button>
+            <button class="ThemeButton" onclick="ChangeTheme(12)" style="background-image: url('../Assets/BG16.png');">Night Sky</button>
+            <button class="ThemeButton" onclick="ChangeTheme(4)" style="background-image: url('../Assets/BG08.png');">Seraphic (Terraria Mods)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(5)" style="background-image: url('../Assets/Creations/CosmicFields.png');">Fields (Terraria Mods)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(7)" style="background-image: url('../Assets/BG11.gif');">WELCOME TO THE CITY (Deltarune Ch2)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(6)" style="background-image: url('../Assets/BG10.gif');">The Third Sanctuary (Deltarune Ch4)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(13)" style="background-image: url('../Assets/BG17.gif');">Crumbling Tower (Deltarune Ch4)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(8)" style="background-image: url('../Assets/BG12.png');">Panic Betrayer (Ultrakill)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(9)" style="background-image: url('../Assets/BG13.gif');">City of Tears (Hollow Knight)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(10)" style="background-image: url('../Assets/BG14.gif');">Greenpath (Hollow Knight)</button>
 
         </div>
     </div>
@@ -124,6 +131,18 @@
                     }
                     case 10: {
                         document.getElementById("bg").style.backgroundImage = "url('../Assets/BG14.gif')";
+                        break;
+                    }
+                    case 11: {
+                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG15.png')";
+                        break;
+                    }
+                    case 12: {
+                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG16.png')";
+                        break;
+                    }
+                    case 13: {
+                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG17.gif')";
                         break;
                     }
                 }
