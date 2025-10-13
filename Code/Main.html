@@ -18,62 +18,113 @@
         <link rel="stylesheet" href="style.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head><img src="../Assets/CRT.gif" class="CRT">
-    
 
-    <iframe src="Home.html" style="width: 100vw; height: 100vw; border: 0px; vertical-align: middle;"></iframe>
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
 
-    <div style="position: fixed; left: 50%; transform: translate(-50%, -50%);
-    bottom: -12px; line-height: 0; background-image: linear-gradient(#0000009d, black);
-    border-radius: 12.5px 12.5px 0px 0px; width: 90%;">
-        <button onclick="ChangeTheme()" id="themeButton">Theme : Mountain Range</button>
+            overflow-x: auto;
+            overflow-y: auto;
+
+            resize: both;
+            position: relative;
+        }
+        .ThemeWindow {
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            bottom: -725px;
+            line-height: 0;
+            background-image: linear-gradient(rgba(32, 32, 32, 0.875), black);
+            border-radius: 12.5px 12.5px 0px 0px;
+            width: 90%;
+            height: 500px;
+            transition: 0.5s;
+            box-shadow: 0px 0px 10px gray;
+            border: 2px gray solid;
+        }
+        .ThemeWindow:hover {
+            bottom: -500px;
+        }
+        .ThemeButton {
+            padding: 10px;
+            margin: 3px;
+            background-size: cover;
+            text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 4px black;
+        }
+    </style>
+
+    <div class="container">
+        <iframe src="Home.html" style="width: 100%; height: 100%; border: 0px;"></iframe>
+    </div>
+
+    <div class="ThemeWindow">
+        <img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"><font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Themes</font><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;">
+
+        <div style="width: 800px; display: flex; flex-wrap: wrap; justify-content: center; margin: auto;">
+
+            <button class="ThemeButton" onclick="ChangeTheme(0)" style="background-image: url('../Assets/BG.png');">Theme : Lake (Default Theme)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(1)" style="background-image: url('../Assets/BG09.png');">Theme : Clouds</button>
+            <button class="ThemeButton" onclick="ChangeTheme(2)" style="background-image: url('../Assets/BG06.png');">Theme : Autumn</button>
+            <button class="ThemeButton" onclick="ChangeTheme(3)" style="background-image: url('../Assets/BG05.png');">Theme : Celestial</button>
+            <button class="ThemeButton" onclick="ChangeTheme(4)" style="background-image: url('../Assets/BG08.png');">Theme : Seraphic (Terraria Mods)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(5)" style="background-image: url('../Assets/Creations/CosmicFields.png');">Theme : Fields (Terraria Mods)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(6)" style="background-image: url('../Assets/BG10.gif');">Theme : The Third Sanctuary (Deltarune)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(7)" style="background-image: url('../Assets/BG11.gif');">Theme : WELCOME TO THE CITY (Deltarune)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(8)" style="background-image: url('../Assets/BG12.png');">Theme : Panic Betrayer (Ultrakill)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(9)" style="background-image: url('../Assets/BG13.gif');">Theme : City of Tears (Hollow Knight)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(10)" style="background-image: url('../Assets/BG14.gif');">Theme : Greenpath (Hollow Knight)</button>
+
+        </div>
     </div>
 
     <script>
-        var theme = 0;
-
-            function ChangeTheme() {
-                theme += 1;
-
+            function ChangeTheme(theme) {
                 switch (theme) {
+                    case 0: {
+                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG.png')";
+                        break;
+                    }
                     case 1: {
                         document.getElementById("bg").style.backgroundImage = "url('../Assets/BG09.png')";
-                        document.getElementById("themeButton").innerHTML = "Theme : Clouds";
                         break;
                     }
                     case 2: {
                         document.getElementById("bg").style.backgroundImage = "url('../Assets/BG06.png')";
-                        document.getElementById("themeButton").innerHTML = "Theme : Autumn";
                         break;
                     }
                     case 3: {
                         document.getElementById("bg").style.backgroundImage = "url('../Assets/BG05.png')";
-                        document.getElementById("themeButton").innerHTML = "Theme : Celestial";
                         break;
                     }
                     case 4: {
                         document.getElementById("bg").style.backgroundImage = "url('../Assets/BG08.png')";
-                        document.getElementById("themeButton").innerHTML = "Theme : Seraphic (Terraria Mods)";
                         break;
                     }
                     case 5: {
                         document.getElementById("bg").style.backgroundImage = "url('../Assets/Creations/CosmicFields.png')";
-                        document.getElementById("themeButton").innerHTML = "Theme : Cosmic Fields (Terraria Mods)";
                         break;
                     }
                     case 6: {
                         document.getElementById("bg").style.backgroundImage = "url('../Assets/BG10.gif')";
-                        document.getElementById("themeButton").innerHTML = "Theme : The Third Sanctuary (Deltarune)";
                         break;
                     }
                     case 7: {
                         document.getElementById("bg").style.backgroundImage = "url('../Assets/BG11.gif')";
-                        document.getElementById("themeButton").innerHTML = "Theme : WELCOME TO THE CITY (Deltarune)";
                         break;
                     }
                     case 8: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG.png')";
-                        document.getElementById("themeButton").innerHTML = "Theme : Mountain Range";
-                        theme = 0;
+                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG12.png')";
+                        break;
+                    }
+                    case 9: {
+                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG13.gif')";
+                        break;
+                    }
+                    case 10: {
+                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG14.gif')";
+                        break;
                     }
                 }
             }
