@@ -47,7 +47,7 @@
             backdrop-filter: blur(12px);
         }
         .BottomWindow:hover {
-            bottom: -750px;
+            bottom: -725px;
         }
         .ThemeButton {
             padding: 15px;
@@ -86,25 +86,33 @@
             <button style="margin-left: 15px;" onclick="ChangeTab(0)">Webrings</button>
             <button style="margin-left: 5px;" onclick="ChangeTab(1)">Themes</button>
             <button style="margin-left: 5px;" onclick="ChangeTab(2)">Playlists</button>
+            <button style="background: none; border: none; box-shadow: none; margin-left: 5px;">
+                ★ HOVER TO SHOW ★
+            </button>
         </div>
         
         <div id="Webrings" class="BotWinTab">
-            
-            <div id="aero-ring">
-                <script src="https://frutigeraeroarchive.org/javascript/aero-webring.js"></script>
-            </div><br>
-
-            <map name="win7widget-compact">
-                <area href="https://baccyflap.com/noai" target="_parent" shape="rect" coords="0,0,216,29" alt="no ai webring" title="no ai webring">
-                <area href="https://baccyflap.com/noai/?prv&s=cbl" target="_parent" shape="rect" coords="102,45,199,71" alt="previous" title="previous">
-                <area href="https://baccyflap.com/noai/?rnd" target="_parent" shape="rect" coords="102,81,199,105" alt="random" title="random">
-                <area href="https://baccyflap.com/noai/?nxt&s=cbl" target="_parent" shape="rect" coords="102,116,199,141" alt="next" title="next">
-            </map>
-            <img usemap="#win7widget-compact" src="https://baccyflap.com/noai/win7widget-compact.gif" alt="a Windows 7 style dialog box titled 'The No AI Webring' with a little icon showing a computer chip in a rubbish bin. beside it are three clickable buttons, labeled Previous, Random and Next"><br>
-
-            <div id='euroring'>
-                <script type="text/javascript" src="https://euroring.neocities.org/scripts/onionring-variables.js"></script>
-                <script type="text/javascript" src="https://euroring.neocities.org/scripts/flagmapFI.js"></script>
+            <div style="padding: 10px; border-radius: 8px; background-color: rgba(0, 0, 0, 0.5); width: 40vw; height: 400px; display: flexbox; flex-wrap: wrap; flex-direction: column; margin: auto; overflow: scroll;">
+                <thought>(Scrollable)</thought>
+                <br>
+                <div id="aero-ring">
+                    <script src="https://frutigeraeroarchive.org/javascript/aero-webring.js"></script>
+                </div><br>
+                
+                <map name="win7widget-compact">
+                    <area href="https://baccyflap.com/noai" target="_parent" shape="rect" coords="0,0,216,29" alt="no ai webring" title="no ai webring">
+                    <area href="https://baccyflap.com/noai/?prv&s=cbl" target="_parent" shape="rect" coords="102,45,199,71" alt="previous" title="previous">
+                    <area href="https://baccyflap.com/noai/?rnd" target="_parent" shape="rect" coords="102,81,199,105" alt="random" title="random">
+                    <area href="https://baccyflap.com/noai/?nxt&s=cbl" target="_parent" shape="rect" coords="102,116,199,141" alt="next" title="next">
+                </map>
+                <img usemap="#win7widget-compact" src="https://baccyflap.com/noai/win7widget-compact.gif" alt="a Windows 7 style dialog box titled 'The No AI Webring' with a little icon showing a computer chip in a rubbish bin. beside it are three clickable buttons, labeled Previous, Random and Next"><br>
+                <br>
+                <div class="FancyBox">
+                    <div id='euroring'>
+                        <script type="text/javascript" src="https://euroring.neocities.org/scripts/onionring-variables.js"></script>
+                        <script type="text/javascript" src="https://euroring.neocities.org/scripts/minimal.js"></script>
+                    </div>
+                </div><br>
             </div>
         </div>
 
