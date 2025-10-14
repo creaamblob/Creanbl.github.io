@@ -47,6 +47,35 @@
             text-shadow: 2px 2px blue;
             overflow-wrap: anywhere;
         }
+         #aero-ring {
+            background-image: linear-gradient(white, #9fe2ff75 20%, #9fe2ff75 48%, #58617275 52%, #58617275 65%, #9fe2ff75), url('../Assets/BG09.png');
+            background-size: 100%;
+            border-radius: 10px;
+            text-shadow: -1px -1px black, 1px -1px black, 1px 1px black, -1px 1px 4px black;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.5),
+            inset 0 2px 1px rgba(255, 255, 255, 0.15),
+            inset 0 -2px 1px rgba(0, 0, 0, 0.35);
+            font-family: sans-serif;
+            margin: 10px auto 0px auto;
+            max-width: 15rem;
+            padding: 0.75rem;
+            border: outset 2px lightseagreen;
+        }
+        #aero-ring:hover {
+            box-shadow: 0px 0px 0px 2px white, 0px 0px 32px lightseagreen;
+        }
+        #aero-ring a,
+        #aero-ring a:visited {
+            color: rgb(255, 255, 255) !important;
+            text-decoration: none;
+        }
+        #aero-ring a:focus,
+        #aero-ring a:hover,
+        #aero-ring a:active {
+            transform: scale(1.2);
+            color: lightseagreen !important;
+            text-shadow: 0px 0px 4px white, 0px 0px 4px white;
+        }
     </style>
     <body>
 		
@@ -166,7 +195,20 @@
                     </form>
 
                     <h2>Webrings</h2>
-                    <thought>Moved to left of the page !!</thought><br><br>
+                    <div id="aero-ring">
+                        <script src="https://frutigeraeroarchive.org/javascript/aero-webring.js"></script>
+                    </div><br>
+                    <map name="win7widget-compact">
+                        <area href="https://baccyflap.com/noai" target="_parent" shape="rect" coords="0,0,216,29" alt="no ai webring" title="no ai webring">
+                        <area href="https://baccyflap.com/noai/?prv&s=cbl" target="_parent" shape="rect" coords="102,45,199,71" alt="previous" title="previous">
+                        <area href="https://baccyflap.com/noai/?rnd" target="_parent" shape="rect" coords="102,81,199,105" alt="random" title="random">
+                        <area href="https://baccyflap.com/noai/?nxt&s=cbl" target="_parent" shape="rect" coords="102,116,199,141" alt="next" title="next">
+                    </map>
+                    <img usemap="#win7widget-compact" src="https://baccyflap.com/noai/win7widget-compact.gif" alt="a Windows 7 style dialog box titled 'The No AI Webring' with a little icon showing a computer chip in a rubbish bin. beside it are three clickable buttons, labeled Previous, Random and Next"><br>
+                    <div id='euroring'>
+                        <script type="text/javascript" src="https://euroring.neocities.org/scripts/onionring-variables.js"></script>
+                        <script type="text/javascript" src="https://euroring.neocities.org/scripts/flagmapFI.js"></script>
+                    </div>
                     <a href="Links.html" style="padding: 5px; background-image: url('../Assets/LinkButtons/button.png'); background-size: cover; font-size: 18px;">★ More Links ★</a><br><br>
                 </div>
             </div>
