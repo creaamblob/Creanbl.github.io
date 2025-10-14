@@ -49,6 +49,23 @@
         .ThemeWindow:hover {
             bottom: -800px;
         }
+        .WebringWindow {
+            position: fixed;
+            left: -370px;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            background-image: linear-gradient(rgba(32, 32, 32, 0.75), black);
+            border-radius: 0px 12.5px 12.5px 0px;
+            width: 800px;
+            height: 90%;
+            transition: 0.5s;
+            box-shadow: 0px 0px 10px gray;
+            border: 2px gray solid;
+            backdrop-filter: blur(12px);
+        }
+        .WebringWindow:hover {
+            left: 300px;
+        }
         .ThemeButton {
             padding: 15px;
             margin: 2px;
@@ -57,7 +74,7 @@
         }
         .Playlist {
             border: none;
-            height: 300px;
+            height: 200px;
 
             box-shadow: 0px 0px 10px gray;
             border: 2px gray solid;
@@ -77,6 +94,35 @@
             flex-wrap: wrap;
             justify-content: center;
             margin: auto;
+        }
+        #aero-ring {
+            background-image: linear-gradient(white, #9fe2ff75 20%, #9fe2ff75 48%, #58617275 52%, #58617275 65%, #9fe2ff75), url('../Assets/BG09.png');
+            background-size: 100%;
+            border-radius: 10px;
+            text-shadow: -1px -1px black, 1px -1px black, 1px 1px black, -1px 1px 4px black;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.5),
+            inset 0 2px 1px rgba(255, 255, 255, 0.15),
+            inset 0 -2px 1px rgba(0, 0, 0, 0.35);
+            font-family: sans-serif;
+            margin: 10px auto 0px auto;
+            max-width: 15rem;
+            padding: 0.75rem;
+            border: outset 2px lightseagreen;
+        }
+        #aero-ring:hover {
+            box-shadow: 0px 0px 0px 2px white, 0px 0px 32px lightseagreen;
+        }
+        #aero-ring a,
+        #aero-ring a:visited {
+            color: rgb(255, 255, 255) !important;
+            text-decoration: none;
+        }
+        #aero-ring a:focus,
+        #aero-ring a:hover,
+        #aero-ring a:active {
+            transform: scale(1.2);
+            color: lightseagreen !important;
+            text-shadow: 0px 0px 4px white, 0px 0px 4px white;
         }
         @media screen and (max-width: 935px) {
             .WindColL {
@@ -101,7 +147,7 @@
 
     <div class="ThemeWindow">
         <div class="WindColL">
-            <div style="width: 90%;"><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"><font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Themes</font><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"></div>
+            <div style="width: 100%;"><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"><font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Themes</font><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"></div>
 
             <button class="ThemeButton" onclick="ChangeTheme(0)" style="background-image: url('../Assets/BG.png');">Lake (Default Theme)</button>
             <button class="ThemeButton" onclick="ChangeTheme(1)" style="background-image: url('../Assets/BG09.png');">Clouds</button>
@@ -121,11 +167,33 @@
         </div>
 
         <div class="WindColR">
-            <div style="width: 90%;"><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"><font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Playlist</font><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"></div>
-            <img src="../Assets/CD.png" style="position: relative; left: 120px; height: 300px; z-index: -1; animation-name: CDSpin; animation-duration: 2s; animation-timing-function: linear; animation-iteration-count: infinite;">
+            <div style="width: 100%;"><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"><font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Playlist</font><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"></div>
+            <img src="../Assets/CD.png" style="position: relative; left: 120px; height: 200px; z-index: -1; animation-name: CDSpin; animation-duration: 2s; animation-timing-function: linear; animation-iteration-count: infinite;">
             <iframe class="Playlist" src="https://www.youtube.com/embed/videoseries?si=AUfFy8t3kPVnaKqu&amp;list=PL9PlyUgDLriJE64lGE320crFgBBr--Zdg"></iframe>
             
         </div>
+    </div>
+
+    <div class="WebringWindow">
+        <div style="position: inherit; top: 50%; left: 85%; rotate: 90deg; width: 200px;">
+            <div style="width: 100%;"><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"><font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Webrings</font><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"></div>
+        </div>
+        <div id="aero-ring">
+            <script src="https://frutigeraeroarchive.org/javascript/aero-webring.js"></script>
+        </div><br>
+        <map name="win7widget-compact">
+        <area href="https://baccyflap.com/noai" target="_parent" shape="rect" coords="0,0,216,29" alt="no ai webring" title="no ai webring">
+        <area href="https://baccyflap.com/noai/?prv&s=cbl" target="_parent" shape="rect" coords="102,45,199,71" alt="previous" title="previous">
+        <area href="https://baccyflap.com/noai/?rnd" target="_parent" shape="rect" coords="102,81,199,105" alt="random" title="random">
+        <area href="https://baccyflap.com/noai/?nxt&s=cbl" target="_parent" shape="rect" coords="102,116,199,141" alt="next" title="next">
+        </map>
+        <img usemap="#win7widget-compact" src="https://baccyflap.com/noai/win7widget-compact.gif" alt="a Windows 7 style dialog box titled 'The No AI Webring' with a little icon showing a computer chip in a rubbish bin. beside it are three clickable buttons, labeled Previous, Random and Next"><br>
+        <div id='euroring'>
+            <script type="text/javascript" src="https://euroring.neocities.org/scripts/onionring-variables.js"></script>
+            <script type="text/javascript" src="https://euroring.neocities.org/scripts/flagmapFI.js"></script>
+        </div>
+
+        <a href="Links.html" style="padding: 5px; background-image: url('../Assets/LinkButtons/button.png'); background-size: cover; font-size: 18px;">★ More Links ★</a><br><br>
     </div>
 
     <script>
