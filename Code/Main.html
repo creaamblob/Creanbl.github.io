@@ -51,7 +51,7 @@
         }
         .WebringWindow {
             position: fixed;
-            left: -370px;
+            left: -270px;
             transform: translate(-50%, -50%);
             top: 50%;
             background-image: linear-gradient(rgba(32, 32, 32, 0.75), black);
@@ -64,7 +64,7 @@
             backdrop-filter: blur(12px);
         }
         .WebringWindow:hover {
-            left: 300px;
+            left: 400px;
         }
         .ThemeButton {
             padding: 15px;
@@ -178,7 +178,7 @@
         <div style="position: inherit; top: 50%; left: 85%; rotate: 90deg; width: 200px;">
             <div style="width: 100%;"><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"><font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Webrings</font><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"></div>
         </div>
-        <div style="display: flexbox; flex-wrap: wrap; justify-content: center; width: 100%; overflow: scroll; height: 400px;">
+        <div style="display: flexbox; flex-wrap: wrap; justify-content: center; width: 100%; overflow: scroll; height: 500px;">
             <thought>(Scrollable)</thought><br>
 
             <div id="aero-ring">
@@ -204,7 +204,6 @@
     </div>
 
     <script>
-        document.getElementById("euroring").style.margin = "0px";
             function ChangeTheme(theme) {
                 switch (theme) {
                     case 0: {
