@@ -28,32 +28,68 @@
             overflow-x: auto;
             overflow-y: auto;
 
-            resize: both;
+            resize: none;
             position: relative;
         }
         .ThemeWindow {
             position: fixed;
             left: 50%;
             transform: translate(-50%, -50%);
-            bottom: -725px;
+            bottom: -1175px;
             line-height: 0;
             background-image: linear-gradient(rgba(32, 32, 32, 0.75), black);
             border-radius: 12.5px 12.5px 0px 0px;
             width: 90%;
-            height: 500px;
+            height: 800px;
             transition: 0.5s;
             box-shadow: 0px 0px 10px gray;
             border: 2px gray solid;
-            backdrop-filter: blur(8px);
+            backdrop-filter: blur(12px);
         }
         .ThemeWindow:hover {
-            bottom: -400px;
+            bottom: -800px;
         }
         .ThemeButton {
-            padding: 10px;
-            margin: 3px;
+            padding: 15px;
+            margin: 2px;
             background-size: cover;
             text-shadow: -1px -1px black, 1px -1px black, 1px 1px black, -1px 1px 4px black;
+        }
+        .Playlist {
+            border: none;
+            height: 300px;
+
+            box-shadow: 0px 0px 10px gray;
+            border: 2px gray solid;
+        }
+        .WindColL {
+            width: 40%;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        }
+        .WindColR {
+            width: 60%;
+            float: right;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        }
+        @media screen and (max-width: 935px) {
+            .WindColL {
+                width: 90%;
+                float: none;
+            }
+            .WindColR {
+                display: none;
+            }
+        }
+        @keyframes CDSpin {
+            0% { rotate: 0deg;}
+            100% { transform: rotate(360deg);}
         }
     </style>
 
@@ -64,9 +100,8 @@
     </div>
 
     <div class="ThemeWindow">
-        <img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"><font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Themes</font><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;">
-
-        <div style="width: 80%; display: flex; flex-wrap: wrap; justify-content: center; margin: auto;">
+        <div class="WindColL">
+            <div style="width: 90%;"><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"><font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Themes</font><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"></div>
 
             <button class="ThemeButton" onclick="ChangeTheme(0)" style="background-image: url('../Assets/BG.png');">Lake (Default Theme)</button>
             <button class="ThemeButton" onclick="ChangeTheme(1)" style="background-image: url('../Assets/BG09.png');">Clouds</button>
@@ -83,6 +118,13 @@
             <button class="ThemeButton" onclick="ChangeTheme(9)" style="background-image: url('../Assets/BG13.gif');">City of Tears (Hollow Knight)</button>
             <button class="ThemeButton" onclick="ChangeTheme(10)" style="background-image: url('../Assets/BG14.gif');">Greenpath (Hollow Knight)</button>
 
+        </div>
+
+        <div class="WindColR">
+            <div style="width: 90%;"><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"><font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Playlist</font><img src="../Assets/TennaText/NEW.png" style="vertical-align: middle; image-rendering: pixelated; border-radius: 0px;"></div>
+            <img src="../Assets/CD.png" style="position: relative; left: 120px; height: 300px; z-index: -1; animation-name: CDSpin; animation-duration: 2s; animation-timing-function: linear; animation-iteration-count: infinite;">
+            <iframe class="Playlist" src="https://www.youtube.com/embed/videoseries?si=AUfFy8t3kPVnaKqu&amp;list=PL9PlyUgDLriJE64lGE320crFgBBr--Zdg"></iframe>
+            
         </div>
     </div>
 
