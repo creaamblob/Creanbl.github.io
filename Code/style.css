@@ -424,8 +424,7 @@ blogcardp {
 
     padding: 5px;
     margin: auto;
-    background-image: linear-gradient(rgb(93, 93, 93, 0.75) 0%, rgb(50, 50, 50, 0.75) 45%, rgb(25, 25, 25, 0.75) 55%, rgb(25, 25, 25, 0.75) 80%, rgb(40, 40, 40, 0.75) 100%),
-    url('../Assets/Finland.png');
+    background-image: radial-gradient(black, rgba(0, 0, 0, 0.66)), url('../Assets/Finland.png');
     background-size: contain;
     box-shadow: 0px 0px 4px gray;
     border: 2px gray solid;
