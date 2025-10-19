@@ -6,7 +6,7 @@ body {
     color: white;
     font-size: 30px;
     text-align: center;
-    font-family: WanderersLost, Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-underline-offset: 12px;
 }
 h1 {
@@ -72,7 +72,6 @@ p {
     display: none;
     text-align: center;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .SmallScreenContain {
     position: fixed;
@@ -262,9 +261,8 @@ iframe {
 .Top {
     background-image: linear-gradient(rgb(93, 93, 93) 0%, rgb(50, 50, 50) 45%, rgb(25, 25, 25) 55%, rgb(25, 25, 25) 80%, rgb(60, 60, 60) 100%);
     border-radius: 24px 24px 0px 0px;
-    padding-bottom: 6px;
     position: relative;
-    top: -20px;
+    top: -25px;
     display: flex;
     justify-content: center;
             
@@ -284,35 +282,35 @@ iframe {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.125));
     content: "";
 }
-        #aero-ring {
-            background-image: linear-gradient(white, #9fe2ff75 20%, #9fe2ff75 48%, #58617275 52%, #58617275 65%, #9fe2ff75), url('../Assets/BG09.png');
-            background-size: cover;
-            border-radius: 10px;
-            text-shadow: -1px -1px black, 1px -1px black, 1px 1px black, -1px 1px 4px black;
-            box-shadow: 0 0 4px rgba(0, 0, 0, 0.5),
-            inset 0 2px 1px rgba(255, 255, 255, 0.15),
-            inset 0 -2px 1px rgba(0, 0, 0, 0.35);
-            font-family: sans-serif;
-            margin: 10px auto 0px auto;
-            max-width: 15rem;
-            padding: 0.75rem;
-            border: outset 2px lightseagreen;
-        }
-        #aero-ring:hover {
-            box-shadow: 0px 0px 0px 2px white, 0px 0px 32px lightseagreen;
-        }
-        #aero-ring a,
-        #aero-ring a:visited {
-            color: rgb(255, 255, 255) !important;
-            text-decoration: none;
-        }
-        #aero-ring a:focus,
-        #aero-ring a:hover,
-        #aero-ring a:active {
-            transform: scale(1.2);
-            color: lightseagreen !important;
-            text-shadow: 0px 0px 4px white, 0px 0px 4px white;
-        }
+#aero-ring {
+    background-image: linear-gradient(white, #9fe2ff75 20%, #9fe2ff75 48%, #58617275 52%, #58617275 65%, #9fe2ff75), url('../Assets/BG09.png');
+    background-size: cover;
+    border-radius: 10px;
+    text-shadow: -1px -1px blue, 1px -1px blue, 1px 1px blue, -1px 1px 4px blue;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5),
+        inset 0 2px 1px rgba(255, 255, 255, 0.15),
+        inset 0 -2px 1px rgba(0, 0, 0, 0.35);
+    font-family: sans-serif;
+    margin: 10px auto 0px auto;
+    max-width: 15rem;
+    padding: 0.75rem;
+    border: outset 2px blue;
+}
+#aero-ring:hover {
+    box-shadow: 0px 0px 0px 2px aqua, 0px 0px 32px blue;
+}
+#aero-ring a,
+#aero-ring a:visited {
+    color: aqua !important;
+    text-decoration: none;
+}
+#aero-ring a:focus,
+#aero-ring a:hover,
+#aero-ring a:active {
+    transform: scale(1.2);
+    color: white !important;
+    text-shadow: 0px 0px 4px blue, 0px 0px 4px white;
+}
 blogtitlefont {
     text-align: center;
     font-size: 20px;
