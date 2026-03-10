@@ -44,7 +44,6 @@
 		}
         h2 {
             margin-bottom: 5px;
-            text-shadow: 2px 2px blue;
             overflow-wrap: anywhere;
         }
     </style>
@@ -186,7 +185,7 @@
                 const date = new Date();
                 const offSet = date.getTimezoneOffset() * 60 * 1000;
                 const UTCtime = date.getTime() + offSet;
-                const UTCoffset = 3 * 60 * 60 * 1000;
+                const UTCoffset = 2 * 60 * 60 * 1000;
                 const FinlandTime = UTCtime + UTCoffset;
                 const FinlandTime2 = new Date(FinlandTime);
                 var Year = String(FinlandTime2.getFullYear());

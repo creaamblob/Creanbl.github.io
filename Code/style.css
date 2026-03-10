@@ -6,17 +6,20 @@ body {
     color: white;
     font-size: 30px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, Geneva, Verdana, sans-serif;
     text-underline-offset: 12px;
 }
 h1 {
     transition: 0.25s;
+    font-weight: normal;
 }
 h2 {
     transition: 0.25s;
+    font-weight: normal;
 }
 h3 {
     transition: 0.25s;
+    font-weight: normal;
 }
 
 a:link { color: rgb(98, 186, 253); }
@@ -203,7 +206,6 @@ iframe {
     background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat;
     background-size: 240px, 320px, 100%, 75px, 60px;
     background-position: left bottom, right 22.5vw, 0px 0px, 0px 0px, 0px 0px;
-    font-family: WanderersLost;
     image-rendering: pixelated;
 }
 .CoolParagraph {
@@ -225,7 +227,6 @@ iframe {
     color: white;
     font-size: 30px;
     text-align: center;
-    font-family: WanderersLost, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .FancyBox {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -316,7 +317,6 @@ blogtitlefont {
     font-size: 20px;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 blogcardp {
     font-size: 10px;
@@ -324,7 +324,6 @@ blogcardp {
     text-align: left;
     margin-top: 15px;
     padding: 2px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .TextBox {
     background-color: #000000;
@@ -341,7 +340,6 @@ blogcardp {
     color: white;
     font-size: 30px;
     text-align: center;
-    font-family: WanderersLost, Courier, monospace;
 }
 .BlogCard {
     background-color: #000000;
@@ -363,7 +361,6 @@ blogcardp {
     color: white;
     font-size: 15px;
     text-align: center;
-    font-family: WanderersLost, Courier, monospace;
     transition: 0.25s;
 }
 .BlogCard:hover {
