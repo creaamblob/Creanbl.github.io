@@ -59,20 +59,31 @@
 
             <div class="WindowContainer">
                 <div id="Page1" class="Page">
-                <div style="width: 100%; image-rendering: pixelated;"><br>
-                    <a href="CreationsFolder/TranscendentMod.html" style="width: 50%;">
-                        <img src="../Assets/Blog/TranscendentModThumbnail4.png" style="vertical-align: middle; justify-content: center; width: 50%;">
-                    </a><br>
-                    <span style="font-size: 25px;">★ Transcendence Mod ★</span><br>
-                    <span style="font-size: 15px;">A Terraria 1.4.4 content mod for tModloader.</span>
+                    <div style="width: 100%; image-rendering: pixelated;"><br>
+                        <a href="CreationsFolder/TranscendentMod.html" style="width: 50%;">
+                            <img src="../Assets/Blog/TranscendentModThumbnail4.png" style="vertical-align: middle; justify-content: center; width: 50%;">
+                        </a><br>
+                        <span style="font-size: 25px;">★ Transcendence Mod ★</span><br>
+                        <span style="font-size: 15px;">A Terraria 1.4.4 content mod for tModloader.</span>
+                    </div>
                 </div>
-            </div>
+
+                <div id="Page2" class="Page">
+                    <div style="width: 100%; image-rendering: pixelated;"><br>
+                        <a href="CreationsFolder/BHGameLauncher.html" style="width: 50%;">
+                            <img src="CreationsFolder/BHGame/BulletHellGame.png" style="vertical-align: middle; justify-content: center; width: 50%;">
+                        </a><br>
+                        <span style="font-size: 25px;">★ Bullet Hell Game ★</span><br>
+                        <span style="font-size: 15px;">Abandadoned Godot game I made once</span>
+                    </div>
+                </div>
             
             <div class="FancyBox" style="width: 75%;">
                 <div class="CarouselBar" id="PreviewChangeBar"></div>
             </div><br>
             <div class="ButtonTab" style="display: inline-block; width: 100%; height: 80px;">
                 <button onclick="ChangePreview(1)" class="ChangePageButton" id="ChangePageButton1">1</button>
+                <button onclick="ChangePreview(2)" class="ChangePageButton" id="ChangePageButton2">2</button>
             </div>
 
             <br><br>
@@ -108,10 +119,11 @@
         setInterval(ChangePreviewAutomatically, 8);
         function ChangePreviewAutomatically() {
             console.log(String(changePageTimer));
-            changePageTimer += 0.375;
+            changePageTimer += 0.175;
             if (changePageTimer > 100) {
                 switch (curPreview) {
-                    case 1: ChangePreview(1); break;
+                    case 1: ChangePreview(2); break;
+                    case 2: ChangePreview(1); break;
                 }
                 
                 changePageTimer = 0;
@@ -141,7 +153,7 @@
             curPreview = goPreview;
             changePageTimer = 0;
         }
-        ChangePreview(1);
+        ChangePreview(2);
         </script>
     </body>
 </html>

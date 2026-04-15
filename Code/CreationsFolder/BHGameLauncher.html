@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html id="background">
+    <head>
+        <title>Creations -★- Crean's Website</title>
+        <link rel="icon" href="../../Assets/Creations.png"/>
+        <link rel="stylesheet" href="../style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body>
+        <div class="MiniNavigateBar">
+
+            <a href="../Home.html" class="Links">
+                <img src="../../Assets/Home.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../Creations.html" class="Links">
+                <img src="../../Assets/Creations.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../Blogs.html" class="Links">
+                <img src="../../Assets/Blog.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../Info.html" class="Links">
+                <img src="../../Assets/Info.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../Misc.html" class="Links">
+                <img src="../../Assets/Misc.png" class="LinkButtonSmol">
+            </a>
+            
+            <a href="../Main.html" target="_parent" class="Links" style="position: absolute; top: 5px; font-size: 10px; height: 20px; color: aqua;">
+                Return to Main.html
+            </a>
+        </div>
+
+        <br><br>
+
+        <div class="StarBlanket" style="width: 80vw; height: fit-content; border-radius: 12.5px 20px 50px; padding-bottom: 10px;">
+            <div class="Top">
+                <p style="margin: 25px;">
+                    Bullet Hell Game
+                </p>
+            </div>
+    
+            <div class="WindowContainer" style="width: 70vw; height: fit-content; padding: 5%;">
+                <iframe src="BHGame/BulletHellGame.html" width="90%" height="440vh"></iframe>
+
+                <div style="display: flex; padding: 10px;">
+                    <div class="FancyBox" style="flex: 40%; margin: 5px;">
+                        <h1>How to Play:</h1>
+                        <p>Dodge enemy bullets</p>
+                        <p>Shoot down enemies</p>
+                        <p>Collect Multiplier items</p>
+                        <p>Graze bullets for score</p>
+                        <p>Have fun! (≧◡≦)<br>
+                            <thought>If you try to play this on mobile you'll have to die I'm sorryyyy~</thought>
+                        </p>
+                    </div>
+
+                    <div class="FancyBox" style="flex: 40%; margin: 5px;">
+                        <h1>Controls:<br></h1>
+                        <p>WASD -★- Movement</p>
+                        <p>K/MouseR -❀- Shoot</p>
+                        <p>K/MouseR -★- Focus</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <script>
+            var num1 = document.getElementById("number1").value;
+            var num2 = document.getElementById("number2").value;
+            var divideZeroCounter = 0;
+
+            function ChangeNumber(mode) {
+                    var num1 = document.getElementById("number1").value;
+                    var num2 = document.getElementById("number2").value;
+
+                    switch (mode) {
+                        //Num 1
+                        case 1: document.getElementById("number1").value = Math.sin(num1); break;
+                        case 2: document.getElementById("number1").value = Math.cos(num1); break;
+                        case 3: document.getElementById("number1").value = Math.tan(num1); break;
+                        case 100: document.getElementById("number1").value = Math.sqrt(num1); break;
+                        case 102: document.getElementById("number1").value = Math.PI; break;
+                        case 104: document.getElementById("number1").value = ""; break;
+                        //Num 2
+                        case 4: document.getElementById("number2").value = Math.sin(num2); break;
+                        case 5: document.getElementById("number2").value = Math.cos(num2); break;
+                        case 6: document.getElementById("number2").value = Math.tan(num2); break;
+                        case 101: document.getElementById("number2").value = Math.sqrt(num2); break;
+                        case 103: document.getElementById("number2").value = Math.PI; break;
+                        case 105: document.getElementById("number2").value = ""; break;
+
+                        case 150: {
+                            document.getElementById("number1").value = "";
+                            document.getElementById("number2").value = "";
+                            break;
+                        }
+                    }
+            }
+            function CalculateAnswer(mathType) {
+                var num1 = document.getElementById("number1").value;
+                var num2 = document.getElementById("number2").value;
+
+                var realNum1 = num1;
+                var realNum2 = num2;
+                var amount;
+                var val = ":(";
+
+                if (mathType == 0) {
+                    val = Number(num1) + Number(num2);
+                }
+                if (mathType == 1) {
+                    val = Number(num1) - Number(num2);
+                }
+                if (mathType == 2) {
+                    val = Number(num1) * Number(num2);
+                }
+                if (mathType == 3) {
+                    val = Number(num1) / Number(num2);
+                    if ((num1 == 0 || num2 == 0) && num1 != "" && num2 != "") {
+                        document.getElementById("background").style.backgroundImage = "none";
+                        document.getElementById("background").style.backgroundColor = "black";
+
+                        document.getElementById("Result").style.backgroundImage = "none";
+                        document.getElementById("Result").style.backgroundColor = "black";
+
+                        document.getElementById("Result").style.fontSize = "20px";
+
+                        divideZeroCounter += 1;
+
+                        if (document.getElementById("Result").innerHTML != " ... ") {
+                            val = "..."
+                        }
+                        else {
+                            val = " ... ";
+                        }
+
+                        switch (document.getElementById("Result").innerHTML) {
+                            case "...": val = "... What are you doing?"; break;
+                            case "... What are you doing?": val = "... You know that you can't divide by zero..."; break;
+                            case "... You know that you can't divide by zero...": val = "... Are you expecting some secret dialog?"; break;
+                            case "... Are you expecting some secret dialog?": val = "... Well, there may or may not be some..."; break;
+                            case "... Well, there may or may not be some...": val = "Alright I'm not really evil, there's actually none. Please trust me."; break;
+                            case "Alright I'm not really evil, there's actually none. Please trust me.": val = " ... "; break;
+                        }
+                    }
+                }
+                if (mathType == 4) {
+                    val = Number(num1) * Math.sin(Number(num2));
+                }
+                if (mathType == 5) {
+                    val = Number(num1) * Math.cos(Number(num2));
+                }
+                if (mathType == 6) {
+                    val = Number(num1) * Math.tan(Number(num2));
+                }
+
+                if (mathType == 7) {
+                    val = Number(num1) / Math.sin(Number(num2));
+                }
+                if (mathType == 8) {
+                    val = Number(num1) / Math.cos(Number(num2));
+                }
+                if (mathType == 9) {
+                    val = Number(num1) / Math.tan(Number(num2));
+                }
+                if (mathType == 10) {
+                    val = (Number(num1) * (100 + Number(num2))) / 100;
+                }
+
+                if (num1 == "" && num2 == "") {
+                    val = "Please enter something!"
+                }
+
+                document.getElementById("Result").style.color = "white";
+                document.getElementById("Result").innerHTML = String(val);
+            }
+        </script>
+    </body>
+</html>
