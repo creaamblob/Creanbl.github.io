@@ -9,16 +9,10 @@ body {
     font-family: 'Segoe UI', Arial, Geneva, Verdana, sans-serif;
     text-underline-offset: 12px;
 }
-h1 {
-    transition: 0.25s;
-    font-weight: normal;
-}
-h2 {
-    transition: 0.25s;
-    font-weight: normal;
-}
-h3 {
-    transition: 0.25s;
+h1, h2, h3, h4, h5 {
+    font-size: 16px;
+    background-image: linear-gradient(rgb(255, 208, 221) 0%, rgb(247, 178, 199) 45%, rgb(233, 150, 182) 55%, rgb(233, 150, 182) 80%, rgb(195, 113, 162) 100%);
+    margin: 0.5vh 1vw 0.5vh 1vw;
     font-weight: normal;
 }
 
@@ -181,10 +175,12 @@ audio {
 }
 .WindowContainer {
     background-image: url('../Assets/BG04.webp');
+
     box-shadow: 0px 0px 4px white;
     border: 2px white solid;
-    width: 95%;
-    margin: auto;
+    
+    margin: 0vw 0.5vw 0vw 0.5vw;
+
     image-rendering: pixelated;
     border-radius: 8px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -197,11 +193,14 @@ iframe {
     box-shadow: 0 0 4px white;
     border-width: 0px 2px 2px;
 			
-    display: inline-block;
+    display: flexbox;
+    justify-content: center;
+
     border-radius: 4px;
     font-size: 30px;
 
-    width: 62.5vw;
+    margin: 0vw 0.5vw 0vw 0.5vw;
+
     background-blend-mode: normal, normal, normal, soft-light, normal;
     background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), radial-gradient(#5ab2ff6f, #000c4bc0), url('../Assets/BG07.gif'), url('../Assets/BG02.webp');
     background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat;
@@ -210,11 +209,12 @@ iframe {
     image-rendering: pixelated;
 }
 .CoolParagraph {
-    margin: 3.75vw;
+    margin: 1vw;
     color: rgb(255, 255, 255);
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: #9999998e;
     text-shadow: 0px 0px 2px black;
+    overflow-wrap: anywhere;
 }
 .Window {
     background-color: rgba(247, 178, 199, 0.75);
@@ -233,12 +233,11 @@ iframe {
 }
 .FancyBox {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    font-size: 14px;
     text-underline-offset: 6px;
 
     padding: 5px;
-    margin: auto;
-    width: 40%;
+    margin: 1vw;
     background-image: linear-gradient(rgb(255, 208, 221) 0%, rgb(247, 178, 199) 45%, rgb(233, 150, 182) 55%, rgb(233, 150, 182) 80%, rgb(195, 113, 162) 100%);
     box-shadow: 0px 0px 4px white;
     border: 2px white solid;

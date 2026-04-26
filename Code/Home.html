@@ -18,7 +18,6 @@
             overflow: auto;
         }
 		.Window2 {
-			background-image: linear-gradient(#161e5a, #15112c00), url('../Assets/BG02.webp');
 			border: 2px white solid;
             box-shadow: 0 0 4px white;
 			
@@ -27,19 +26,22 @@
 			
 			border-radius: 2.5px;
 			font-size: 30px;
+
+            background-image: linear-gradient(transparent, transparent 50%, rgba(0, 0, 0, 0.66) 70%, rgba(0, 0, 0, 0.66)), url('../Assets/BG05.png');
+            width: 100%;
+            height: 20vw;
+            border-width: 0px 0px 2px;
+            background-size: cover;
 		}
 		.NavigationField {
-			display: inline-block;
-			width: 60vw;
-			justify-content: center;
-			vertical-align: middle;
 			padding: 60px 0px 40px;
             
             background-image: url('../Assets/BG04.webp');
             box-shadow: 0px 0px 4px white;
             border: 2px white ridge;
             border-radius: 4px;
-            margin-bottom: 20px;
+
+            margin: 0px 1vw 20px 1vw;
 		}
         h2 {
             margin-bottom: 5px;
@@ -57,9 +59,11 @@
                 </div>
                 
                 <div class="StarBlanket" id="StarBlanket">
-                    <div class="Window2" style="background-image: linear-gradient(transparent, transparent 50%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.5)), url('../Assets/BG05.png'); width: 62.5vw; height: 20vw; border-width: 0px 0px 2px; background-size: cover;">
+                    <div class="Window2">
                         <img src="../Assets/Logo.png" style="height: 20vw;">
                     </div>
+
+                    <h1>Home Page</h1>
                     
                     <p class="CoolParagraph">
                         <font class="StarDivider">
@@ -96,13 +100,13 @@
                             <img src="../Assets/Misc.png" class="LinkButton">
                         </a>
 
-                    </div><br>
+                    </div>
                     
                     <font class="StarDivider">
                         ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈<br>
                     </font>
                     
-                    <div class="NavigationField" style="margin-bottom: 150px;">
+                    <div class="NavigationField">
                         <a href="https://www.youtube.com/@Creanbl" target="_parent" class="Links" style="margin-top: 50%;">
                             <img src="../Assets/YoutubeLogo.png" class="LinkButton">
                         </a>
@@ -114,9 +118,9 @@
 
                     <h2>Newest Article</h2>
 
-                    <div class="WindowContainer" style="height: 270px; display: flexbox; vertical-align: middle;">
+                    <div class="NavigationField" style="padding: 10px;">
                         Written: 2026★04★18<br>
-                        <a href="Articles/TranscendentModReport4.html" class="Links" style="margin: auto;">
+                        <a href="Articles/TranscendentModReport4.html" class="Links">
                             <div class="BlogCard" style="background-image: url('../Assets/Blog/TranscendentModThumbnail4.png');">
                                 <blogtitlefont>Transcendence Mod Prog. Report #4</blogtitlefont><br>
                                 <blogcardp>My fourth progress report for my Terraria content mod.</p>
@@ -135,15 +139,15 @@
                 <div class="StarBlanket" style="width: 95%; line-height: 1.25; background-position: left bottom, right 5px, 0px 0px, 0px 0px, 0px 0px;"><br>
 
                     <h2>Contact me</h2>
-
-                    <div class="FancyBox" style="width: 80%; overflow-wrap: anywhere;">
+                        
+                    <div class="CoolParagraph">
                         creanblwebsite@gmail.com
                     </div>
                     
                     <br>
                     
                     <h2>My Time</h2>
-                    <div class="FancyBox" style="width: 60%;">
+                    <div class="CoolParagraph">
                         <font id="time">00:00:00</font><br>
                         <font id="time2">00:00:00</font> <img src="../Assets/Clock.gif">
                     </div>
@@ -166,10 +170,10 @@
                     </form>
 
                     <h2>Webrings</h2>
-                    <thought style="font-size: 20px;">
+                    <div class="CoolParagraph" style="font-size: 16px;">
                         Moved to the bottom of the page !!<br>
                         If the window doesn't work, click on the link below !!<br>
-                    </thought><br>
+                    </div>
                     <a href="Webrings.html" target="_top" style="margin-bottom: 20px; padding: 5px 5px 10px; background-image: url('../Assets/LinkButtons/button.png'); background-size:cover; font-size: 18px; image-rendering: pixelated;">★★ Webrings ★★</a><br>
                     <a href="Links.html" style="padding: 5px 5px 12px; background-image: url('../Assets/LinkButtons/button.png'); background-size: cover; font-size: 18px;">★★ More Links ★★</a><br><br>
                 </div>
