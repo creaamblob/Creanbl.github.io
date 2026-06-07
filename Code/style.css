@@ -202,9 +202,9 @@ iframe {
     margin: 0vw 0.5vw 0vw 0.5vw;
 
     background-blend-mode: normal, normal, normal, soft-light, normal;
-    background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), url('../Assets/BG02.webp');
-    background-repeat: no-repeat, no-repeat, repeat;
-    background-size: 240px, 320px, 60px;
+    background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), radial-gradient(rgba(218, 160, 192, 0.5), transparent), url('../Assets/BG02.webp');
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+    background-size: 240px, 320px, 100%, 60px;
     background-position: left bottom, right 22.5vw, 0px 0px;
     image-rendering: pixelated;
 }
