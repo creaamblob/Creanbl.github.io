@@ -137,13 +137,12 @@
         <div id="Themes" class="BotWinTab">
             <font style="margin: 15px; font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Themes</font><br>
 
-            <button class="ThemeButton" onclick="ChangeTheme(0)" style="background-image: url('../Assets/BG.png');">Lake (Default Theme)</button>
-            <button class="ThemeButton" onclick="ChangeTheme(12)" style="background-image: url('../Assets/BG16.png');">Night Sky (Original Theme)</button>
-            <button class="ThemeButton" onclick="ChangeTheme(1)" style="background-image: url('../Assets/BG09.png');">Clouds</button>
-            <button class="ThemeButton" onclick="ChangeTheme(2)" style="background-image: url('../Assets/BG06.png');">Autumn</button>
-            <button class="ThemeButton" onclick="ChangeTheme(11)" style="background-image: url('../Assets/BG15.png');">Grass</button>
-            <button class="ThemeButton" onclick="ChangeTheme(3)" style="background-image: url('../Assets/BG05.png');">Celestial</button>
-            <button class="ThemeButton" onclick="ChangeTheme(4)" style="background-image: url('../Assets/BG08.png');">Dreamscape</button>
+            <button class="ThemeButton" onclick="ChangeTheme(0)" style="background-image: url('../Assets/BG.png');">Clouds (Default)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(1)" style="background-image: url('../Assets/BG06.png');">Lake (Old Theme)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(2)" style="background-image: url('../Assets/BG07.png');">Night Sky (Original Theme)</button>
+            <button class="ThemeButton" onclick="ChangeTheme(3)" style="background-image: url('../Assets/BG08.png');">Dreamscape</button>
+            <button class="ThemeButton" onclick="ChangeTheme(4)" style="background-image: url('../Assets/BG09.png');">Autumn</button>
+            <button class="ThemeButton" onclick="ChangeTheme(5)" style="background-image: url('../Assets/BG10.png');">Grass</button>
 
         </div>
 
@@ -160,6 +159,7 @@
     <script>
         document.getElementById("Themes").style.display = "none";
         document.getElementById("Music").style.display = "none";
+        theme = 4;
 
         function ChangeTab(tab) {
             if (tab == 0) {
@@ -185,59 +185,23 @@
                         break;
                     }
                     case 1: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG09.png')";
-                        break;
-                    }
-                    case 2: {
                         document.getElementById("bg").style.backgroundImage = "url('../Assets/BG06.png')";
                         break;
                     }
-                    case 3: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG05.png')";
+                    case 2: {
+                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG07.png')";
                         break;
                     }
-                    case 4: {
+                    case 3: {
                         document.getElementById("bg").style.backgroundImage = "url('../Assets/BG08.png')";
                         break;
                     }
+                    case 4: {
+                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG09.png')";
+                        break;
+                    }
                     case 5: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/Creations/CosmicFields.png')";
-                        break;
-                    }
-                    case 6: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG10.gif')";
-                        break;
-                    }
-                    case 7: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG11.gif')";
-                        break;
-                    }
-                    case 8: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG12.png')";
-                        break;
-                    }
-                    case 9: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG13.gif')";
-                        break;
-                    }
-                    case 10: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG14.gif')";
-                        break;
-                    }
-                    case 11: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG15.png')";
-                        break;
-                    }
-                    case 12: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG16.png')";
-                        break;
-                    }
-                    case 13: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG17.gif')";
-                        break;
-                    }
-                    case 14: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG18.png')";
+                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG10.png')";
                         break;
                     }
                 }

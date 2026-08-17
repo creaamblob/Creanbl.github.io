@@ -8,32 +8,51 @@
     </head>
     <style>
         .Sidepanel {
-            width: 35vw;
+            width: 45vw;
+            max-height: 45vh;
             margin: 20px;
-            background-image: linear-gradient(transparent, rgba(4, 17, 119, 0.22)), url(../Assets/BG02.webp);
+            background-image: linear-gradient(transparent, rgba(4, 17, 119, 0.22)), url(../Assets/BG04.webp);
             background-repeat: repeat;
             background-position: top left;
-            background-size: 20%;
+            background-size: 10%;
             
             box-shadow: 0px 0px 5px white;
             border: 2px white solid;
             border-radius: 4px;
+            padding: 8px;
         }
-        transgender {
-            background: linear-gradient(to left, aqua, aqua 20%, pink 20%, pink 40%,
-            white 40%, white 60%, pink 60%, pink 80%, aqua 80%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow: none;
+        .cont {
+            overflow: scroll;
+            max-height: 95%;
         }
-        @media screen and (max-width: 1600px) {
-            .TLDRpc {
-                display: none;
-            }
-            .TLDRmobile {
-                display: inline-block;
-            }
+        gold {
+            color: gold;
+        }
+        silv {
+            color: silver;
+        }
+        bron {
+            color: rgb(163, 93, 43)
+        }
+        bigImage {
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+            aspect-ratio: 16 / 9; 
+        }
+        bigImage img {
+            object-fit: contain;
+        }
+        bigImage:hover img {
+            width: 75%;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            top: 75%;
+            left: 50%;
+            aspect-ratio: 16 / 9; 
         }
     </style>
     <body>
@@ -72,97 +91,145 @@
                 About Me
             </div>
 
-            <div class="StarBlanket" style="margin: 0px 10px 20px; padding: 0px 5px 10px; background-position: left bottom, right 5px, 0px 0px, 0px 0px, 0px 0px;">
-                <div style="display: flex; justify-content: center; height: 100%;">
-                    <div class="Sidepanel">
-                        <p style="margin: 5px;">
-                            <font style="font-size: 30px; color: white;">
-                            -༄⚝-:> Likes:
-                        </font><br>
-                        -⚝ Video Games<br>
-                        -❀ Browsing the Internet<br>
-                        -⚝ Using Social Medias<br>
-                        -❀ Pixel Art<br>
-                        -⚝ Programming<br>
-                        -❀ Talking to people online <thought>(but it scares me a bit at times)</thought><br>
+            <div class="StarBlanket" style="display: flex; justify-content: center;">
+                <div class="Sidepanel">
 
-                        <br><br>
-                        
-                        <font style="font-size: 30px; color: white;">
-                            -༄❀-:> Dislikes:
-                        </font><br>
-                        -⚝ Generative AI<br>
-                        -❀ Studying<br>
-                        -⚝ Programming<br>
-                        -❀ Talking to people face-to-face<br>
+                    <button class="butt" id="def" onclick="ChangeTab(event, 'A')">Extra</button>
+                    <button class="butt" onclick="ChangeTab(event, 'B')">Uma</button>
+                    <button class="butt" onclick="ChangeTab(event, 'C')">Quiz Results</button>
 
-                        <br><br>
-                        
-                        </p>
-                <font style="opacity: 0%;">
-                    ---<br>
-                    ---<br>
-                    ---<br>
-                    ---<br>
-                    ---<br>
-                    ---<br>
-                    ---<br>
-                    ---<br>
-                    ---<br>
-                    ---<br>
-                </font>
-            </div>
-            <div class="Glass" style="width: 65vw; margin: 1vw;">
-                <p>
-                    <font class="StarDivider">
-                        ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈
-                    </font><br><br>
+                    <div class="cont" id="A">
+                        <h1>Extra Info:</h1>
+                        <div class="Glass">
+                            <p>
+                                Prounouns:<br>
+                                <font style="color:rgb(255, 144, 181)">she/they</font>  
 
-                    Hello !!<br>
-                    I'm Creanbl<thought>(pronounced "Kriin-bel")</thought>, the webmaster of this site.<br>
-                    My favourite games are Umamusume, Terraria, Touhou and Celeste.<br>
-                    My uma friend code is 217429426151, feel free to add me, I currently have a
-                    <a target="_blank" href="../Assets/UmaCard.png">8* Power Pasa for Pace Chasers</a>.<br>
-                    I have social anxiety, so I never tend to message first, please keep that in mind if you want to talk with me.<br>
-                    If you notice me deleting any of my old messages that means that I regret posting it,<br>
-                    and now live with the embarrassment of it eternally.
-                    <br><br>
-                    
-                    <font class="StarDivider">
-                        ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈<br>
-                    </font>
-                    
-                    <br><br>
+                                <br><br>
 
-                    <font style="font-size: 30px; color: white;">
-                        -༄⚝-:> Info:
-                    </font><br>
+                                Favourite Colors:<br>
+                                <font style="color: rgb(255, 144, 181);">Pink</font>,
+                                <font style="color: deepskyblue;">Blue</font>, 
+                                <font style="color: rgb(255, 116, 116);">Red</font>
 
-                    -⚝ Nationality: <font style="color: aquamarine">Finnish</font><br>
-                    -❀ Favourite Colours: <font style="color: deepskyblue;">Blue</font>, <font style="color: pink;">Pink</font><br>
-                    -⚝ Pronouns: <font style="color: rgb(178, 106, 250)">She/They</font><br>
-                    -❀ <font style="color: crimson">Autistic and ADHD</font> 💀<br>
-                    
-                    <br><br>
-                    
-                    <font style="font-size: 30px; color: white;">
-                        -༄❀-:> Games I've Played:
-                    </font><br>
-                    -⚝ <img src="../Assets/BigText/Umamusume.png" width="125px"><br>
-                    -❀ <img src="../Assets/BigText/TerrariaLogo.png" width="150px"><br>
-                    -⚝ <img src="../Assets/BigText/UndertaleLogo.png" width="150px">/<img src="../Assets/BigText/DeltaruneLogo.png" width="150px"><br>
-                    -❀ <img src="../Assets/BigText/HollowKnightLogo.png" width="100px"><br>
-                    -⚝ <img src="../Assets/BigText/TouhouLogo.png" width="75px"> <br>
-                    -❀ <img src="../Assets/BigText/UltrakillLogo.png" width="100px"><br>
-                    -⚝ <img src="../Assets/BigText/CelesteLogo.png" width="100px"><br>
-                    -❀ <img src="../Assets/BigText/MinecraftLogo.png" width="100px"><br>
-                    -⚝ <img src="../Assets/BigText/GeometryDashLogo.png" width="150px"><br>
-                    -❀ <img src="../Assets/BigText/SDVLogo.png" width="100px"><br>
+                                <br><br>
 
-                </p>
+                                Aliases/Nicknames:<br>
+                                <font style="color: rgb(255, 144, 181);">Debbie</font><br>
+                                <font style="color: rgb(167, 220, 241);">Deb</font><br>
+                                <font style="color: violet;">Creanbl</font>
+
+                                <br><br>
+
+                                Discord:<br>
+                                <font style="color: rgb(255, 144, 181);">crean_bl</font>
+
+                                <br><br>
+
+                                Basic DNI, I block freely
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cont" id="B">
+                        <h1>Umamusume</h1>
+                        <div class="Glass">
+                            <p>
+                                Curren Chan and Smart Falcon are my oshis<br><br>
+                                I also like other umas like:<br>
+                                Mejiro Dober,
+                                King Halo,
+                                Mayano Top Gun and Copano Rickey
+                            </p>
+                            <p>
+                                Champions Meeting Finals performance so far:<br>
+                                <font style="color: rgb(172, 46, 46); font-size: 10px;">(We don't talk about Sagittarius)</font>
+                                <br>
+                                <font style="color: gray; font-size: 12px;">
+                                    <bron>#3</bron> Leo Cup (<silv>Group B</silv>)<br>
+                                    <gold>#1</gold> Virgo Cup (<silv>Group B</silv>, Oguri Cap)<br>
+                                    <bron>#3</bron> Libra Cup (<silv>Group B</silv>)<br>
+                                    <gold>#1</gold> Scorpio Cup (<silv>Group B</silv>, Summer Special Week)<br>
+                                    <gold>#1</gold> Capricorn Cup (<gold>Group A</gold>, Smart Falcon)<br>
+                                    <gold>#1</gold> Aquarius Cup (<gold>Group A</gold>, Smart Falcon)<br>
+                                    <silv>#2</silv> Pisces Cup (<silv>Group B</silv>)<br>
+                                    <bron>#3</bron> Aries Cup (<silv>Group B</silv>)<br>
+                                    <gold>#1</gold> Taurus Cup 2 (<silv>Group B</silv>, Mihono Bourbon)<br>
+                                    <silv>#2</silv> Gemini Cup 2 (<gold>Group A</gold>)<br>
+                                    <silv>#2</silv> Cancer Cup 2 (<gold>Group A</gold>)<br>
+                                    <gold>#1</gold> Leo Cup 2 (<gold>Group A</gold>, Wedding Curren Chan)<br>
+                                    <bron>#3</bron> Virgo Cup 2 (<gold>Group A</gold>)<br>
+                                </font>
+                            </p>
+                            <p>My Trainer ID is 217 429 426 151 on Global, please add me! I currently have a 9* Seiun (shown below) and MLB Tachyon Speed!</p>
+                            <bigImage><img src="../Assets/trainer_profile_card_front_08-15-47_17-08-26.png" width="100%"></bigImage>
+                            <bigImage><img src="../Assets/umaParent.png" width="100%"></bigImage>
+                            <bigImage><img src="../Assets/20260721011400_1.jpg" width="100%"</bigImage>
+                        </div>
+                    </div>
+                        <div class="cont" id="C">
+                        <h1>Quiz Results:</h1>
+                        <div class="Glass">
+                            <p>
+                                Click on image for link!<br>
+                                Sorry there's not much here yet... (๑﹏๑//)
+                            </p>
+                            <p>
+                                <a target="_top" href="https://umapoi.moe/results?responses=%5B%5B%5B0%5D%2C%5B1%5D%2C%5B3%5D%2C%5B0%5D%2C%5B6%5D%2C%5B4%5D%2C%5B0%5D%2C%5B0%5D%2C%5B6%5D%2C%5B5%5D%2C%5B1%5D%2C%5B1%5D%2C%5B1%5D%2C%5B2%5D%2C%5B2%5D%2C%5B2%5D%2C%5B0%5D%2C%5B1%5D%2C%5B1%5D%2C%5B0%5D%2C%5B8%5D%2C%5B2%5D%2C%5B0%5D%2C%5B7%5D%2C%5B4%5D%2C%5B0%5D%2C%5B2%2C8%2C10%5D%2C%5B0%5D%2C%5B2%5D%5D%2C%5B%5B37%5D%2C%5B3%2C5%5D%2C%5B0%2C2%2C7%2C13%2C15%5D%5D%5D&version=v3">
+                                    <bigImage><img src="../Assets/Quiz/trainer_card.png" width="100%"></bigImage>
+                                </a>
+                                <a target="_top" href="https://undertale.jadenthejaded.uk/">
+                                    <bigImage><img src="../Assets/Quiz/soul-knd.png" width="100%"></bigImage>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Glass" style="width: 65vw;">
+                    <h1>Short Intro</h1>
+                    <p>
+                        Heyyyyy I'm Debbie!!!<br>
+                        I'm currently studying for game development (really embarassing, I know).<br>
+                        I like making pixel art and hanging out with my friend(s) on my free time.<br>
+                    </p>
+                    <p>
+                        I have social anxiety, so I never tend to message first, so please keep that in mind if you want to talk with me.
+                    </p>
+                    <h1>Games I play:</h1>
+                    <p>
+                        Umamusume<br>
+                        Undertale/Deltarune<br>
+                        Minecraft<br>
+                        Terraria<br>
+                        Garry's Mod<br>
+                        Celeste<br>
+                        Touhou Project<br>
+                        ULTRAKILL<br>
+                        Hollow Knight
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</div><br><br>
-</body>
+
+        <script>
+            function ChangeTab(evt, target) {
+                var loop, cont, butt;
+                cont = document.getElementsByClassName("cont");
+                
+                for (loop = 0; loop < cont.length; loop++)
+                {
+                    cont[loop].style.display = "none";
+                }
+                butt = document.getElementsByClassName("butt");
+                for (loop = 0; loop < butt.length; loop++)
+                {
+                    butt[loop].className = butt[loop].className.replace(" selected", "");
+                }
+                evt.currentTarget.className += " selected";
+
+                document.getElementById(target).style.display = "block";
+            }
+            document.getElementById("def").click();
+        </script>
+    </body>
 </html>
