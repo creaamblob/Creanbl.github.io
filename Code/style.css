@@ -34,6 +34,24 @@ a:visited { color: rgb(240, 102, 148); }
     font-size: 50px;
 }
 
+.ExitButton {
+    width: 50px;
+    height: 50px;
+    
+    position: relative;
+    top: 35px;
+    
+    background-color: transparent;
+    background-size: cover;
+    background-image: url('../Assets/CloseButton_Unhover.png');
+
+    border: none;
+}
+.ExitButton:hover {
+    box-shadow: none;
+    background-image: url('../Assets/CloseButton.png');
+}
+
 .WindowButton {
     image-rendering: pixelated;
     border-radius: 2px;
@@ -205,7 +223,7 @@ iframe {
     background-image: url('../Assets/Rose.png'), url('../Assets/Stars.png'), radial-gradient(rgba(218, 160, 192, 0.5), transparent), url('../Assets/BG02.webp');
     background-repeat: no-repeat, no-repeat, no-repeat, repeat;
     background-size: 240px, 320px, 100%, 60px;
-    background-position: left bottom, right 22.5vw, 0px 0px;
+    background-position: left bottom, right 10%, 0px 0px;
     image-rendering: pixelated;
 }
 p {

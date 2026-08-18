@@ -8,18 +8,19 @@
     </head>
     <style>
         .Sidepanel {
-            width: 45vw;
-            max-height: 45vh;
+            width: 40vw;
+            max-height: 55vh;
             margin: 20px;
-            background-image: linear-gradient(transparent, rgba(4, 17, 119, 0.22)), url(../Assets/BG04.webp);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(219, 38, 108, 0.25)), url(../Assets/BG11.jpg);
             background-repeat: repeat;
             background-position: top left;
-            background-size: 10%;
+            background-size: 40%;
             
             box-shadow: 0px 0px 5px white;
             border: 2px white solid;
             border-radius: 4px;
             padding: 8px;
+            padding-bottom: 60px;
         }
         .cont {
             overflow: scroll;
@@ -35,24 +36,21 @@
             color: rgb(163, 93, 43)
         }
         bigImage {
-            width: 75%;
-            display: flex;
+            width: 85%;
             justify-content: center;
             margin: auto;
-            margin-bottom: 10px;
-            padding: 10px;
-            aspect-ratio: 16 / 9; 
+            transition: 0.5s;
+
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
         }
         bigImage img {
+            width: 85%;
+            aspect-ratio: 16 / 9;
             object-fit: contain;
-        }
-        bigImage:hover img {
-            width: 75%;
-            position: fixed;
-            transform: translate(-50%, -50%);
-            top: 75%;
-            left: 50%;
-            aspect-ratio: 16 / 9; 
         }
     </style>
     <body>
@@ -86,6 +84,11 @@
 
         <br>
 
+        <bigImage id="ImgDisplay">
+            <button class="ExitButton" id="ExitButton" onclick="FrameVisibility(false, '../Assets/BG04.webp');"></button><br>
+            <img src="../Assets/BG10.png" id="BigIMG">
+        </bigImage>
+
         <div class="Window" style="width: 90vw;">
             <div class="Top">
                 About Me
@@ -99,6 +102,12 @@
                     <button class="butt" onclick="ChangeTab(event, 'C')">Quiz Results</button>
 
                     <div class="cont" id="A">
+                        <h1>Small notice:</h1>
+                        <div class="Glass">
+                            <p>
+                                Any images you see in this sidebar can be clicked to zoom in!
+                            </p>
+                        </div>
                         <h1>Extra Info:</h1>
                         <div class="Glass">
                             <p>
@@ -116,7 +125,7 @@
 
                                 Aliases/Nicknames:<br>
                                 <font style="color: rgb(255, 144, 181);">Debbie</font><br>
-                                <font style="color: rgb(167, 220, 241);">Deb</font><br>
+                                <font style="color: rgb(255, 116, 116);">Deb / Debs</font><br>
                                 <font style="color: violet;">Creanbl</font>
 
                                 <br><br>
@@ -134,7 +143,7 @@
                         <h1>Umamusume</h1>
                         <div class="Glass">
                             <p>
-                                Curren Chan and Smart Falcon are my oshis<br><br>
+                                Curren Chan and Smart Falcon are my #1 oshis<br><br>
                                 I also like other umas like:<br>
                                 Mejiro Dober,
                                 King Halo,
@@ -161,24 +170,27 @@
                                 </font>
                             </p>
                             <p>My Trainer ID is 217 429 426 151 on Global, please add me! I currently have a 9* Seiun (shown below) and MLB Tachyon Speed!</p>
-                            <bigImage><img src="../Assets/trainer_profile_card_front_08-15-47_17-08-26.png" width="100%"></bigImage>
-                            <bigImage><img src="../Assets/umaParent.png" width="100%"></bigImage>
-                            <bigImage><img src="../Assets/20260721011400_1.jpg" width="100%"</bigImage>
+                            <img src="../Assets/TrainCard.webp" width="100%" onclick="FrameVisibility(true, src)">
+                            <img src="../Assets/umaParent.png" width="100%" onclick="FrameVisibility(true, src)">
+                            <img src="../Assets/20260721011400_1.jpg" width="100%" onclick="FrameVisibility(true, src)">
+                            <img src="../Assets/FLCurren.png" width="100%" onclick="FrameVisibility(true, src)">
                         </div>
                     </div>
                         <div class="cont" id="C">
                         <h1>Quiz Results:</h1>
                         <div class="Glass">
                             <p>
-                                Click on image for link!<br>
                                 Sorry there's not much here yet... (๑﹏๑//)
                             </p>
                             <p>
+                                <img src="../Assets/Quiz/trainer_card.png" width="100%" onclick="FrameVisibility(true, src)">
                                 <a target="_top" href="https://umapoi.moe/results?responses=%5B%5B%5B0%5D%2C%5B1%5D%2C%5B3%5D%2C%5B0%5D%2C%5B6%5D%2C%5B4%5D%2C%5B0%5D%2C%5B0%5D%2C%5B6%5D%2C%5B5%5D%2C%5B1%5D%2C%5B1%5D%2C%5B1%5D%2C%5B2%5D%2C%5B2%5D%2C%5B2%5D%2C%5B0%5D%2C%5B1%5D%2C%5B1%5D%2C%5B0%5D%2C%5B8%5D%2C%5B2%5D%2C%5B0%5D%2C%5B7%5D%2C%5B4%5D%2C%5B0%5D%2C%5B2%2C8%2C10%5D%2C%5B0%5D%2C%5B2%5D%5D%2C%5B%5B37%5D%2C%5B3%2C5%5D%2C%5B0%2C2%2C7%2C13%2C15%5D%5D%5D&version=v3">
-                                    <bigImage><img src="../Assets/Quiz/trainer_card.png" width="100%"></bigImage>
+                                    Link
                                 </a>
+                            <p><br>
+                                <img src="../Assets/Quiz/soul-knd.png" width="100%" onclick="FrameVisibility(true, src)">
                                 <a target="_top" href="https://undertale.jadenthejaded.uk/">
-                                    <bigImage><img src="../Assets/Quiz/soul-knd.png" width="100%"></bigImage>
+                                    Link
                                 </a>
                             </p>
                         </div>
@@ -190,28 +202,41 @@
                     <p>
                         Heyyyyy I'm Debbie!!!<br>
                         I'm currently studying for game development (really embarassing, I know).<br>
-                        I like making pixel art and hanging out with my friend(s) on my free time.<br>
+                        I like making pixel art and hanging out with my friends on my free time.<br>
                     </p>
                     <p>
-                        I have social anxiety, so I never tend to message first, so please keep that in mind if you want to talk with me.
+                        I have social anxiety, so I never tend to message first, so please keep that in mind if you wish to talk with me.
+                    </p>
+                    <p>
+                        This section is really empty at the moment since I struggle with telling about myself a lot, sorry...
                     </p>
                     <h1>Games I play:</h1>
                     <p>
-                        Umamusume<br>
-                        Undertale/Deltarune<br>
-                        Minecraft<br>
-                        Terraria<br>
-                        Garry's Mod<br>
-                        Celeste<br>
-                        Touhou Project<br>
-                        ULTRAKILL<br>
-                        Hollow Knight
+                        <img src="../Assets/BigText/Umamusume.png" width="20%"><br>
+                        <img src="../Assets/BigText/DeltaruneLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/TerrariaLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/MinecraftLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/CelesteLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/UltrakillLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/TouhouLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/HollowKnightLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/Gmod.png" width="20%">
                     </p>
                 </div>
             </div>
         </div>
 
         <script>
+            FrameVisibility(false, '');
+            function FrameVisibility(visible, link) {
+                if (visible == false) {
+                    document.getElementById("ImgDisplay").style.display = "none";
+                }
+                else {
+                    document.getElementById("ImgDisplay").style.display = "block";
+                    document.getElementById("BigIMG").src = link;
+                }
+            }
             function ChangeTab(evt, target) {
                 var loop, cont, butt;
                 cont = document.getElementsByClassName("cont");
