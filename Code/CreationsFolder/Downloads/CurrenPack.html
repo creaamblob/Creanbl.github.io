@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html id="background">
+    <head>
+        <title>Creations -★- Crean's Website</title>
+        <link rel="icon" href="../../../Assets/Creations.png"/>
+        <link rel="stylesheet" href="../../style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+
+    <style>
+        p img {
+            aspect-ratio: 16 / 9;
+            object-fit: contain;
+            transition: 0.25s;
+        }
+        .sub:hover {
+            transform: scale(1.25);
+        }
+        ht {
+            color: rgb(29, 155, 240);
+        }
+    </style>
+
+    <body>
+        <div class="MiniNavigateBar">
+
+            <a href="../../Home.html" class="Links">
+                <img src="../../../Assets/Home.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../../Creations.html" class="Links">
+                <img src="../../../Assets/Creations.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../../Blogs.html" class="Links">
+                <img src="../../../Assets/Blog.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../../Info.html" class="Links">
+                <img src="../../../Assets/Info.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../../Misc.html" class="Links">
+                <img src="../../../Assets/Misc.png" class="LinkButtonSmol">
+            </a>
+            
+            <a href="../../Main.html" target="_parent" class="Links" style="position: absolute; top: 5px; font-size: 10px; height: 20px; color: aqua;">
+                Return to Main.html
+            </a>
+        </div>
+
+        <br>
+
+        <div class="Window" style="width: 60vw; padding-bottom: 10px;">
+            <div class="Top">
+                Downloads
+            </div>
+            
+            <div class="StarBlanket" style="height: fit-content;">
+                <h1>Curren Chan Pack</h1>
+
+                <p>
+                    <img id="MainImage" src="../../../Assets/Downloads/ImagePreviews/CurrenPack/1.webp" width="75%"><br>
+                    <img class="sub" id="SideImage1" src="../../../Assets/Downloads/ImagePreviews/CurrenPack/2.webp" width="10%" onclick="ChangePreview(src, 1)">
+                    <img class="sub" id="SideImage2" src="../../../Assets/Downloads/ImagePreviews/CurrenPack/3.webp" width="10%" onclick="ChangePreview(src, 2)">
+                    <img class="sub" id="SideImage3" src="../../../Assets/Downloads/ImagePreviews/CurrenPack/4.webp" width="10%" onclick="ChangePreview(src, 3)">
+                    <img class="sub" id="SideImage4" src="../../../Assets/Downloads/ImagePreviews/CurrenPack/5.webp" width="10%" onclick="ChangePreview(src, 4)">
+                </p>
+
+                <p>
+                    A texture pack themed after <ht>#CuteCurrenChan</ht> from <ht>#UmamusumePrettyDerby</ht><br>
+                    <ht>#LookatCurren</ht><br>
+                    <thought>Not affiliated with Cygames, this is a non-profit fan creation</thought>
+                </p>
+
+                <h1>Changes:</h1>
+                <p>
+                    <font style="color: rgb(86, 240, 163);">
+                        Ancient Debris ➤ Dream Glimmer<br>
+                        Netherite Scrap ➤ Glimmer Shard<br>
+                        Netherite Upgrade ➤ Sprinter S. Winner's Sash<br>
+                        Netherite Sword<br>
+                        Netherite Spear<br>
+                        Netherite Pickaxe<br>
+                        Netherite Axe<br>
+                        Netherite Shovel<br>
+                        Netherite Hoe<br>
+                        Bow<br>
+                        Arrow<br>
+                        Spectral Arrow<br>
+                        Trident<br>
+                        Mace<br>
+                        Netherite Armor<br>
+                        Netherite Horse Armor<br>
+                    </font>
+                    <font style="color: rgb(245, 79, 106);">
+                        Diamond Horse Armor (Pre-texture update)<br>
+                        Netherite Nautilus Armor<br>
+                        Elytra<br>
+                        Crossbow<br>
+                        Tipped Arrow<br>
+                        Shield<br>
+                        Hotbar<br>
+                        Inventory
+                    </font>
+                </p>
+
+                <h1>Versions</h1>
+                <p>
+                    <a href="../../../Assets/Downloads/Curren Pack (v0.4).zip">
+                        Download for 26.2
+                    </a><br>
+                    <a href="../../../Assets/Downloads/Curren Pack (v.04) [1.21.1].zip">
+                        Download for 1.21.1
+                    </a><br>
+                    <a href="../../../Assets/Downloads/Curren Pack (v0.4) [1.8.9].zip">
+                        Download for 1.8.9
+                    </a>
+                </p>
+
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <textarea name="name" id="Spamton" class="emailField" style="display: none;" required></textarea>
+                    <textarea name="message" placeholder="Suggest versions here !!" class="emailField" style="height: 60px; min-height: 60px; max-height: 240px;" required></textarea>
+                        
+                    <br>
+                        
+                    <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
+                    <input type="hidden" name="subject" value="CreanWebsite Message New!!">
+                    <input type="hidden" name="redirect" value="https://creaamblob.github.io/Creanbl.github.io/Code/SendSuccess.html">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="from_name" value="CreanWebsite">
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <button type="submit" id="submitEmail">Send</button>
+                </form><br>
+
+            </div>
+        </div>
+        <br><br>
+        <script>
+            var curPreview = 1;
+            function ChangePreview(url, curren) {
+                document.getElementById("SideImage" + curren).src = document.getElementById("MainImage").src;
+                document.getElementById("MainImage").src = url;
+            }
+        </script>
+    </body>
+</html>

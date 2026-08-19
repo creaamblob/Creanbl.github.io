@@ -163,6 +163,9 @@ textarea {
     cursor: url('../Assets/Cursor_Hover.png') 18 6, auto;
     transition: 0.25s;
 }
+textarea::placeholder {
+    color: white;
+}
 textarea:hover {
     transform: scale(1.125);
     box-shadow: 0px 0px 8px white;
@@ -231,11 +234,10 @@ p {
     margin: 4px;
     font-size: 18px;
     color: rgb(255, 255, 255);
-
-    background-color: #0000008e;
     text-shadow: 0px 0px 2px black;
     overflow-wrap: anywhere;
 
+    background-color: #0000008e;
     border: 2px rgb(100, 100, 100) solid;
     box-shadow: inset 0px 1px 2px rgba(255, 255, 255, 0.75),
     inset 1px 0px 2px rgba(0, 0, 0),
@@ -466,7 +468,6 @@ blogcardp {
     padding: 2px;
     margin: 0px 15px 15px 15px;
   }
-
   .InsideImageLink {
     position: absolute;
     top: 50%;

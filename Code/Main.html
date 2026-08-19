@@ -81,7 +81,7 @@
     <body>
 
     <div class="container">
-        <iframe src="Home.html" style="width: 100%; height: 100%; border: 0px;"></iframe>
+        <iframe id="iframe" style="width: 100%; height: 100%; border: 0px;"></iframe>
     </div>
 
     <div class="BottomWindow">
@@ -157,6 +157,10 @@
     </div>
 
     <script>
+        var1 = document.getElementById("iframe");
+        const target = decodeURIComponent(location.hash.slice(1)).trim();
+        var1.src = target || "Home.html";
+
         document.getElementById("Themes").style.display = "none";
         document.getElementById("Music").style.display = "none";
         theme = 4;
@@ -178,34 +182,34 @@
                 document.getElementById("Music").style.display = "block";
             }
         }
-            function ChangeTheme(theme) {
-                switch (theme) {
-                    case 0: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG.png')";
-                        break;
-                    }
-                    case 1: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG06.png')";
-                        break;
-                    }
-                    case 2: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG07.png')";
-                        break;
-                    }
-                    case 3: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG08.png')";
-                        break;
-                    }
-                    case 4: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG09.png')";
-                        break;
-                    }
-                    case 5: {
-                        document.getElementById("bg").style.backgroundImage = "url('../Assets/BG10.png')";
-                        break;
-                    }
+        function ChangeTheme(theme) {
+            switch (theme) {
+                case 0: {
+                    document.getElementById("bg").style.backgroundImage = "url('../Assets/BG.png')";
+                    break;
+                }
+                case 1: {
+                    document.getElementById("bg").style.backgroundImage = "url('../Assets/BG06.png')";
+                    break;
+                }
+                case 2: {
+                    document.getElementById("bg").style.backgroundImage = "url('../Assets/BG07.png')";
+                    break;
+                }
+                case 3: {
+                    document.getElementById("bg").style.backgroundImage = "url('../Assets/BG08.png')";
+                    break;
+                }
+                case 4: {
+                    document.getElementById("bg").style.backgroundImage = "url('../Assets/BG09.png')";
+                    break;
+                }
+                case 5: {
+                    document.getElementById("bg").style.backgroundImage = "url('../Assets/BG10.png')";
+                    break;
                 }
             }
+        }
     </script>
     </body>
 </html>
