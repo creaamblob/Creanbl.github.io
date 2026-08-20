@@ -353,13 +353,6 @@ blogtitlefont {
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
 }
-blogcardp {
-    font-size: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: left;
-    margin-top: 15px;
-    padding: 2px;
-}
 .TextBox {
     background-color: #000000;
     background-image: url('../Assets/BG02.webp');
