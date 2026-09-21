@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html style="background-image: none; background-color: transparent;">
+    <head>
+        <title>Blog -★- Crean's Website</title>
+        <link rel="icon" href="../Assets/Blog.png"/>
+        <link rel="stylesheet" href="style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+
+    <style>
+        .Page {
+            margin-top: 25px;
+        }
+        .ButtonTab {
+            width: 100%;
+            height: 80px;
+        }
+    </style>
+
+    <body style="background-image: none; background-color: transparent; background-size: auto; overflow: hidden;">
+        <center>
+            <div class="TextBox" style="width: clamp(); max-width: 50%; height: 500px; padding-top: 0px; padding-bottom: 20px; background-image: none; background-color: transparent; border: 0px;">
+
+                <div style="display: grid; place-content: center;">
+                    <br><br>
+                    <div id="Page1" class="Page">
+
+                        <a href="Articles/TranscendentModReport4.html" target="_parent" class="Links">
+                            <div class="BlogCard" id="Article" style="background-image: url('../Assets/Blog/TranscendentModThumbnail4.png');">
+                                <blogtitlefont>Transcendence Mod Prog. Report #4</blogtitlefont><br>
+                                <p>My fourth progress report for my Terraria content mod.</p>
+                            </div>
+                        </a>
+
+                        <a href="Articles/TranscendentModReport3.html" target="_parent" class="Links">
+                            <div class="BlogCard" id="Article" style="background-image: url('../Assets/Blog/TranscendentModThumbnail3.png');">
+                                <blogtitlefont>Transcendence Mod Prog. Report #3</blogtitlefont><br>
+                                <p>My third progress report for my Terraria content mod.</p>
+                            </div>
+                        </a>
+
+                        <a href="Articles/TranscendentModReport2.html" target="_parent" class="Links">
+                            <div class="BlogCard" id="Article" style="background-image: url('../Assets/Blog/TranscendentModThumbnail2.png');">
+                                <blogtitlefont>Transcendence Mod Prog. Report #2</blogtitlefont><br>
+                                <p>My second progress report for my Terraria content mod.</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div id="Page2" class="Page">
+                        <a href="Articles/TranscendentModReport1.html" target="_parent" class="Links">
+                            <div class="BlogCard" id="Article" style="background-image: url('../Assets/Creations/TranscendentModThumbnail.png');">
+                                <blogtitlefont>Transcendence Mod Prog. Report #1</blogtitlefont><br>
+                                <p>My first progress report for my Terraria content mod.</blogcardp>
+                            </div>
+                        </a>
+        
+                        <a href="Articles/Article1.html" target="_parent" class="Links">
+                            <div class="BlogCard" id="Article" style="background-image: url('../Assets/Blog/Budgies.png');">
+                                <blogtitlefont>My First Article</blogtitlefont><br>
+                                <p>My first article, made for testing purposes.</p>
+                            </div>
+                        </a>
+        
+                        <a target="_parent" class="Links">
+                            <div class="BlogCard" id="Article" style="background-image: url('../Assets/BG02.webp');">
+                                <blogtitlefont>My Sixth Article</blogtitlefont><br>
+                                <p>My sixth article, made for placeholder purposes.</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div id="Page3" class="Page">
+                        <a target="_parent" class="Links">
+                            <div class="BlogCard" id="Article" style="background-image: url('../Assets/BG02.webp');">
+                                <blogtitlefont>My Seventh Article</blogtitlefont><br>
+                                <p>My seventh article, made for placeholder purposes.</p>
+                            </div>
+                        </a>
+        
+                        <a target="_parent" class="Links">
+                            <div class="BlogCard" id="Article" style="background-image: url('../Assets/BG02.webp');">
+                                <blogtitlefont>My Eight Article</blogtitlefont><br>
+                                <p>My eight article, made for placeholder purposes.</p>
+                            </div>
+                        </a>
+        
+                        <a target="_parent" class="Links">
+                            <div class="BlogCard" id="Article" style="background-image: url('../Assets/BG02.webp');">
+                                <blogtitlefont>My Ninth Article</blogtitlefont><br>
+                                <p>My ninth article, made for placeholder purposes.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ButtonTab" style="display: flex; justify-content: center; max-height: 100px; padding-top: 25px;">
+                        <button onclick="ChangePage(1)" class="ChangePageButton" id="ChangePageButton1">1</button>
+                        <button onclick="ChangePage(2)" class="ChangePageButton" id="ChangePageButton2">2</button>
+                        <button onclick="ChangePage(3)" class="ChangePageButton" id="ChangePageButton3">3</button>
+                    </div><br>
+                </div><br>
+            </div>
+        </center>
+        <script>
+            var curPage = 1;
+            function ChangePage(goPage) {
+
+                if (curPage < 1) {
+                    curPage = 1;
+                }
+
+                var loop, buttonID, button, contents;
+                buttonID = document.getElementById(String("ChangePageButton" + goPage));
+                contents = document.getElementById(String("Page" + curPage));
+                upcomingContents = document.getElementById(String("Page" + goPage));
+
+                button = document.getElementsByClassName("ChangePageButton");
+                for (loop = 0; loop < button.length; loop++)
+                {
+                    button[loop].className = button[loop].className.replace(" active", "");
+                }
+
+                buttonID.className += " active";
+                contents.style.display = "none";
+                upcomingContents.style.display = "block";
+                curPage = goPage;
+            }
+            ChangePage(3);
+            ChangePage(2);
+            ChangePage(1);
+        </script>
+    </body>
+</html>

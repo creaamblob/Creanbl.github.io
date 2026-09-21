@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html id="background">
+    <head>
+        <title>Creations -★- Crean's Website</title>
+        <link rel="icon" href="../../../Assets/Creations.png"/>
+        <link rel="stylesheet" href="../../style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+
+    <style>
+        p img {
+            aspect-ratio: 16 / 9;
+            object-fit: contain;
+            transition: 0.25s;
+        }
+        .sub:hover {
+            transform: scale(1.25);
+        }
+    </style>
+
+    <body>
+        <div class="MiniNavigateBar">
+
+            <a href="../../Home.html" class="Links">
+                <img src="../../../Assets/Home.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../../Creations.html" class="Links">
+                <img src="../../../Assets/Creations.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../../Blogs.html" class="Links">
+                <img src="../../../Assets/Blog.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../../Info.html" class="Links">
+                <img src="../../../Assets/Info.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="../../Misc.html" class="Links">
+                <img src="../../../Assets/Misc.png" class="LinkButtonSmol">
+            </a>
+            
+            <a href="../../Main.html" target="_parent" class="Links" style="position: absolute; top: 5px; font-size: 10px; height: 20px; color: aqua;">
+                Return to Main.html
+            </a>
+        </div>
+
+        <br>
+
+        <div class="Window" style="width: 60vw; padding-bottom: 10px;">
+            <div class="Top">
+                Downloads
+            </div>
+            
+            <div class="StarBlanket" style="height: fit-content;">
+                <h1>Downloads Base</h1>
+
+                <p>
+                    <img id="MainImage" src="../../../Assets/Downloads/ImagePreviews/CurrenModel/1.webp" width="75%"><br>
+                    <img class="sub" id="SideImage1" src="../../../Assets/Downloads/ImagePreviews/CurrenModel/2.webp" width="10%" onclick="ChangePreview(src, 1)">
+                    <img class="sub" id="SideImage2" src="../../../Assets/Downloads/ImagePreviews/CurrenModel/3.webp" width="10%" onclick="ChangePreview(src, 2)">
+                    <img class="sub" id="SideImage3" src="../../../Assets/Downloads/ImagePreviews/CurrenModel/4.webp" width="10%" onclick="ChangePreview(src, 3)">
+                </p>
+
+                <p>
+                    A 3D model I made once while EXXXTREEMELY bored over the span of 2 days.<br>
+                    I'm no expert at 3D modelling but I think it turned out fine, we won't address the quality of the rigging though.<br>
+                </p>
+
+                <p>
+                    <a href="../../../Assets/Downloads/CurrenModel.zip">
+                        <img src="../../../Assets/SketchyButton.png" style="image-rendering: optimizeQuality;">
+                    </a>
+                </p>
+                <thought>Not affiliated with Cygames, this is a non-profit fan creation</thought>
+            </div>
+        </div>
+        
+        <script>
+            var curPreview = 1;
+            function ChangePreview(url, curren) {
+                document.getElementById("SideImage" + curren).src = document.getElementById("MainImage").src;
+                document.getElementById("MainImage").src = url;
+            }
+        </script>
+    </body>
+</html>

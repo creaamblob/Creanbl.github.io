@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me -★- Crean's Website</title>
+        <link rel="icon" href="../Assets/Info.png"/>
+        <link rel="stylesheet" href="style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <style>
+        .Sidepanel {
+            width: 40vw;
+            max-height: 65vh;
+            margin: 20px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(219, 38, 108, 0.125)), url(../Assets/BG11.jpg);
+            background-repeat: repeat;
+            background-position: top left;
+            background-size: 40%;
+            
+            box-shadow: 0px 0px 5px white;
+            border: 2px white solid;
+            border-radius: 4px;
+            padding: 8px;
+            padding-bottom: 60px;
+        }
+        .cont {
+            overflow: scroll;
+            max-height: 95%;
+        }
+        gold {
+            color: gold;
+        }
+        silv {
+            color: silver;
+        }
+        bron {
+            color: rgb(187, 109, 54);
+        }
+        cmInfo {
+            color: lightgray;
+            text-shadow: 0px 0px 2px rgb(121, 74, 230);
+            font-size: 12px;
+            font-weight: normal;
+        }
+        bigImage {
+            width: 85%;
+            justify-content: center;
+            margin: auto;
+            transition: 0.5s;
+
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+        }
+        bigImage img {
+            width: 85%;
+            aspect-ratio: 16 / 9;
+            object-fit: contain;
+        }
+    </style>
+    <body>
+        <div class="MiniNavigateBar">
+
+            <a href="Home.html" class="Links">
+                <img src="../Assets/Home.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Creations.html" class="Links">
+                <img src="../Assets/Creations.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Blogs.html" class="Links">
+                <img src="../Assets/Blog.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Info.html" class="Links">
+                <img src="../Assets/Info.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Misc.html" class="Links">
+                <img src="../Assets/Misc.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Main.html" target="_parent" class="Links" style="position: absolute; top: 5px; font-size: 10px; height: 20px; color: aqua;">
+                Return to Main.html
+            </a>
+
+        </div>
+
+        <br>
+
+        <bigImage id="ImgDisplay">
+            <button class="ExitButton" id="ExitButton" onclick="FrameVisibility(false, '../Assets/BG04.webp');"></button><br>
+            <img src="../Assets/BG10.png" id="BigIMG">
+        </bigImage>
+
+        <div class="Window" style="width: 90vw;">
+            <div class="Top">
+                About Me
+            </div>
+
+            <div class="StarBlanket" style="display: flex; justify-content: center;">
+                <div class="Sidepanel">
+
+                    <button class="butt" id="def" onclick="ChangeTab(event, 'A')">Extra</button>
+                    <button class="butt" onclick="ChangeTab(event, 'B')">Uma</button>
+                    <button class="butt" onclick="ChangeTab(event, 'C')">Quiz Results</button>
+
+                    <div class="cont" id="A">
+                        <h1>Small disclaimer:</h1>
+                        <div class="Glass">
+                            <p>
+                                Any images you see in this sidebar can be clicked to zoom in!
+                            </p>
+                        </div>
+                        <h1>Extra Info:</h1>
+                        <div class="Glass">
+                            <p>
+                                Basic DNI criteria, I block and softblock freely
+                                <br><br>
+
+
+                                Prounouns:<br>
+                                <font style="color:rgb(255, 144, 181)">she/they</font>  
+
+                                <br><br>
+
+                                Favourite Colors:<br>
+                                <font style="color: rgb(255, 144, 181);">Pink</font>,
+                                <font style="color: deepskyblue;">Blue</font>, 
+                                <font style="color: rgb(255, 116, 116);">Red</font>
+
+                                <br><br>
+
+                                Aliases/Nicknames:<br>
+                                <font style="color: rgb(255, 144, 181);">Debbie</font><br>
+                                <font style="color: rgb(255, 116, 116);">Deb / Debs</font><br>
+                                <font style="color: violet;">Creanbl</font>
+
+                                <br><br>
+
+                                Discord:<br>
+                                <font style="color: rgb(255, 144, 181);">crean_bl</font>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cont" id="B">
+                        <h1>Umamusume</h1>
+                        <div class="Glass">
+                            <p>
+                                I like
+                                Curren Chan,
+                                Buena Vista,
+                                Smart Falcon,
+                                Mejiro Dober and
+                                King Halo
+                            </p>
+
+                            <p>
+                                Champions Meeting Finals performance so far:<br>
+                                <font style="color: rgb(172, 46, 46); font-size: 10px;">We don't talk about Sagittarius :(</font>
+                                <br>
+                                <font style="color: white; font-size: 16px;  font-weight: bold;">
+                                    <bron>#3</bron> Leo Cup (<silv>Group B</silv>)<br>
+                                    <cmInfo>
+                                        Hanshin 2200m (Takarazuka Kinen), Firm Sunny Summer<br><br>
+                                    </cmInfo>
+
+                                    <gold>#1</gold> Virgo Cup (<silv>Group B</silv>)<br>
+                                    <cmInfo>
+                                        Hanshin 1600m (2021 Mile Championship), Firm Sunny Autumn<br>
+                                        Oguri Cap | Curren Chan | Nice Nature<br>
+                                        Finals in Unity Cup<br><br>
+                                    </cmInfo>
+
+                                    <bron>#3</bron> Libra Cup (<silv>Group B</silv>)<br>
+                                    <cmInfo>
+                                        Kyoto 3000m (Kikuka Sho), Firm Sunny Autumn<br><br>
+                                    </cmInfo>
+
+                                    <gold>#1</gold> Scorpio Cup (<silv>Group B</silv>)<br>
+                                    <cmInfo>
+                                        Tokyo 2000m (2022 Tenno Sho (Autumn)), Soft Rain Autumn<br>
+                                        Summer Special Week | Symboli Rudolf | Nice Nature<br><br>
+                                    </cmInfo>
+
+                                    <gold>#1</gold> Capricorn Cup (<gold>Group A</gold>)<br>
+                                    <cmInfo>
+                                        Chukyo 1200m (Takamatsunomiya Kinen), Soft Snowy Winter<br>
+                                        Smart Falcon | Curren Chan | Oguri Cap<br><br>
+                                    </cmInfo>
+
+                                    <gold>#1</gold> Aquarius Cup (<gold>Group A</gold>)<br>
+                                    <cmInfo>
+                                        Tokyo D1600m (February Stakes), Firm Sunny Winter<br>
+                                        Smart Falcon | Curren Chan | Taiki Shuttle<br><br>
+                                    </cmInfo>
+
+                                    <silv>#2</silv> Pisces Cup (<silv>Group B</silv>)<br>
+                                    <cmInfo>
+                                        Hanshin 3200m (2022 Tenno Sho (Spring)), Heavy Rain Spring<br>
+                                        Mejiro Ryan | Agnes Tachyon | Mayano Top Gun<br>
+                                        First MANT CM<br><br>
+                                    </cmInfo>
+
+                                    <bron>#3</bron> Aries Cup (<silv>Group B</silv>)<br>
+                                    <cmInfo>
+                                        Nakayama 2000m (Satsuki Sho), Firm Sunny Spring<br>
+                                        Seiun Sky, Grass Wonder, Cheerleader Nice Nature<br>
+                                        XOguri CM<br><br>
+                                    </cmInfo>
+
+                                    <gold>#1</gold> Taurus Cup 2 (<silv>Group B</silv>)<br>
+                                    <cmInfo>
+                                        Tokyo 2400m (Japanese Derby), Firm Sunny Spring<br>
+                                        Mihono Bourbon | Cheerleader Nice Nature | DomGrass<br><br>
+                                    </cmInfo>
+
+                                    <silv>#2</silv> Gemini Cup 2 (<gold>Group A</gold>)<br>
+                                    <cmInfo>
+                                        Tokyo 1600m (Yasuda Kinen), Firm Sunny Spring<br>
+                                        Wedding Curren Chan | Smart Falcon | Wedding Air Groove<br><br>
+                                    </cmInfo>
+
+                                    <silv>#2</silv> Cancer Cup 2 (<gold>Group A</gold>)<br>
+                                    <cmInfo>
+                                        Hanshin 1600m (Takarazuka Kinen), Good Cloudy Summer<br>
+                                        XOguri | DomNeicha | DomGrass<br>
+                                        XOguri CM<br><br>
+                                    </cmInfo>
+
+                                    <gold>#1</gold> Leo Cup 2 (<gold>Group A</gold>)<br>
+                                    <cmInfo>
+                                        Nakayama 1200m (Sprinters Stakes), Firm Sunny Summer<br>
+                                        Wedding Curren Chan | DomNeicha | DomGrass<br>
+                                        First CM with Ms. Victoria<br>
+                                        Upgraded Unity & URA<br><br>
+                                    </cmInfo>
+
+                                    <bron>#3</bron> Virgo Cup 2 (<gold>Group A</gold>)<br>
+                                    <cmInfo>
+                                        Oi 2000m (JBC Classic), Good Sunny Autumn<br>
+                                        GL Smart Falcon | DomNeicha | DomGrass<br>
+                                        XOguri CM<br>
+                                        First Grand Live CM<br><br>
+                                    </cmInfo>
+
+                                    <gold>#1</gold> Libra Cup 2 (<gold>Group A</gold>)<br>
+                                    <cmInfo>
+                                        Hanshin 1600m (Mile Championship), Firm Cloudy Autumn<br>
+                                        Wedding Curren Chan | DomGrass | DomNeicha<br>
+                                        XOguri CM<br>
+                                    </cmInfo>
+
+                                </font>
+                            </p>
+                            <p>My Trainer ID is 217 429 426 151 on Global, please add me! I currently have a 9* Seiun (shown below) and MLB Biko Speed!</p>
+                            <img src="../Assets/AboutMe/TrainCard.webp" width="100%" onclick="FrameVisibility(true, src)">
+                            <img src="../Assets/AboutMe/TrainCardJP.webp" width="100%" onclick="FrameVisibility(true, src)">
+                            <img src="../Assets/AboutMe/umaParent.png" width="100%" onclick="FrameVisibility(true, src)">
+                            <img src="../Assets/AboutMe/20260721011400_1.jpg" width="100%" onclick="FrameVisibility(true, src)">
+                            <img src="../Assets/AboutMe/FLCurren.png" width="100%" onclick="FrameVisibility(true, src)">
+                            <img src="../Assets/AboutMe/DreamFest.jpg" width="100%" onclick="FrameVisibility(true, src)">
+                            <video src="../Assets/AboutMe/VirgoLastSpurt.mp4" width="100%" controls fullscreen></video>
+                            <img src="../Assets/AboutMe/Manifestation.png" width="100%" onclick="FrameVisibility(true, src)">
+                            <img src="../Assets/AboutMe/DubaiChocolateLabubu.jpg" width="100%" onclick="FrameVisibility(true, src)">
+                        </div>
+                    </div>
+                        <div class="cont" id="C">
+                        <h1>Quiz Results:</h1>
+                        <div class="Glass">
+                            <p>
+                                Sorry there's not much here yet... (๑﹏๑//)
+                            </p>
+                            <p>
+                                <img src="../Assets/Quiz/trainer_card.png" width="100%" onclick="FrameVisibility(true, src)"><br>
+                                <a target="_top" href="https://umapoi.moe/results?responses=%5B%5B%5B0%5D%2C%5B1%5D%2C%5B3%5D%2C%5B0%5D%2C%5B6%5D%2C%5B4%5D%2C%5B0%5D%2C%5B0%5D%2C%5B6%5D%2C%5B5%5D%2C%5B1%5D%2C%5B1%5D%2C%5B1%5D%2C%5B2%5D%2C%5B2%5D%2C%5B2%5D%2C%5B0%5D%2C%5B1%5D%2C%5B1%5D%2C%5B0%5D%2C%5B8%5D%2C%5B2%5D%2C%5B0%5D%2C%5B7%5D%2C%5B4%5D%2C%5B0%5D%2C%5B2%2C8%2C10%5D%2C%5B0%5D%2C%5B2%5D%5D%2C%5B%5B37%5D%2C%5B3%2C5%5D%2C%5B0%2C2%2C7%2C13%2C15%5D%5D%5D&version=v3">
+                                    Link
+                                </a>
+                            <p><br>
+                                <img src="../Assets/Quiz/soul-knd.png" width="100%" onclick="FrameVisibility(true, src)"><br>
+                                <a target="_top" href="https://undertale.jadenthejaded.uk/">
+                                    Link
+                                </a>
+                            </p>
+
+                            <p><br>
+                                <img src="../Assets/Quiz/Colors.webp" width="80%" onclick="FrameVisibility(true, src)"><br>
+                                <a target="_top" href="https://poomang.com/en/t/mycolor_test/result/161840508?c=26&kc=6">
+                                    Link
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Glass" style="width: 65vw;">
+                    <h1>Short Intro</h1>
+                    <p>
+                        Heyyyyy I'm Debbie!!!<br>
+                        I'm currently studying for game development (really embarassing, I know).<br>
+                        I like making pixel art and hanging out with my friends on my free time.<br>
+                    </p>
+                    <p>
+                        I have social anxiety, so I never tend to message first, so please keep that in mind if you wish to talk with me.
+                    </p>
+                    <p>
+                        This section is really empty at the moment since I struggle with telling about myself a lot, sorry...
+                    </p>
+                    <h1>Games I play:</h1>
+                    <p>
+                        <img src="../Assets/BigText/Umamusume.png" width="20%"><br>
+                        <img src="../Assets/BigText/DeltaruneLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/TerrariaLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/MinecraftLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/CelesteLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/UltrakillLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/TouhouLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/HollowKnightLogo.png" width="20%"><br>
+                        <img src="../Assets/BigText/Gmod.png" width="20%">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            FrameVisibility(false, '');
+            function FrameVisibility(visible, link) {
+                if (visible == false) {
+                    document.getElementById("ImgDisplay").style.display = "none";
+                }
+                else {
+                    document.getElementById("ImgDisplay").style.display = "block";
+                    document.getElementById("BigIMG").src = link;
+                }
+            }
+            function ChangeTab(evt, target) {
+                var loop, cont, butt;
+                cont = document.getElementsByClassName("cont");
+                
+                for (loop = 0; loop < cont.length; loop++)
+                {
+                    cont[loop].style.display = "none";
+                }
+                butt = document.getElementsByClassName("butt");
+                for (loop = 0; loop < butt.length; loop++)
+                {
+                    butt[loop].className = butt[loop].className.replace(" selected", "");
+                }
+                evt.currentTarget.className += " selected";
+
+                document.getElementById(target).style.display = "block";
+            }
+            document.getElementById("def").click();
+        </script>
+    </body>
+</html>

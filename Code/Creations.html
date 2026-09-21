@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creations -★- Crean's Website</title>
+        <link rel="icon" href="../Assets/Creations.png"/>
+        <link rel="stylesheet" href="style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <style>
+        .ButtonTab {
+            display: flex;
+            justify-content: center;
+
+            background-image: url('../Assets/BG04.webp');
+            background-size: 32px;
+            
+            margin: 1vw;
+            padding: 1vw;
+            
+            border: 2px gray solid;
+            box-shadow: inset 0px 1px 4px rgb(255, 255, 255),
+            inset 1px 0px rgba(0, 0, 0, 0.75),
+            inset -1px 0px rgba(0, 0, 0, 0.75);
+        }
+        @font-face { font-family: WanderersLost; src: url('../Assets/WandererLost\ Font.ttf'); }
+        a:link { color: white; }
+        a:active { color: white; }
+        a:visited { color: white; }
+        .CarouselBar {
+            background-color: rgb(98, 186, 253);
+            width: 10px;
+            height: 10px;
+            border-radius: 4px;
+            box-shadow: 0px 0px 4px blue;
+            border: 2px blue solid;
+        }
+    </style>
+    <body>
+
+        <div class="MiniNavigateBar">
+
+            <a href="Home.html" class="Links">
+                <img src="../Assets/Home.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Creations.html" class="Links">
+                <img src="../Assets/Creations.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Blogs.html" class="Links">
+                <img src="../Assets/Blog.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Info.html" class="Links">
+                <img src="../Assets/Info.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Misc.html" class="Links">
+                <img src="../Assets/Misc.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Main.html" target="_parent" class="Links" style="position: absolute; top: 5px; font-size: 10px; height: 20px; color: aqua;">
+                Return to Main.html
+            </a>
+
+        </div>
+
+        <br>
+        
+        <div class="Window" style="width: 80vw; padding: 0px 0px 10px;">
+            <div class="Top">
+                Creations
+            </div>
+
+            <div class="StarBlanket">
+                
+                <h1>Projects I've worked on</h1>
+
+                <div class="Glass">
+                    <div id="Page1">
+                        <div style="width: 100%; image-rendering: pixelated;"><br>
+                            <a href="CreationsFolder/TranscendentMod.html" style="width: 50%;">
+                                <img src="../Assets/Blog/TranscendentModThumbnail5.png" style="vertical-align: middle; justify-content: center; width: 50%;">
+                            </a><br>
+                            <span style="font-size: 25px;">★ Transcendence Mod ★</span><br>
+                            <span style="font-size: 15px;">A Terraria 1.4.4 content mod for tModloader.</span>
+                        </div>
+                    </div>
+                    
+                    <div id="Page2">
+                        <div style="width: 100%; image-rendering: pixelated;"><br>
+                            <a href="CreationsFolder/BHGameLauncher.html" style="width: 50%;">
+                                <img src="CreationsFolder/BHGame/BulletHellGame.png" style="vertical-align: middle; justify-content: center; width: 50%;">
+                            </a><br>
+                            <span style="font-size: 25px;">★ Bullet Hell Game ★</span><br>
+                            <span style="font-size: 15px;">Abandadoned Godot game I made once</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="FancyBox">
+                    <div class="CarouselBar" id="PreviewChangeBar"></div>
+                </div>
+            <div class="ButtonTab">
+                <button onclick="ChangePreview(1)" class="ChangePageButton" id="ChangePageButton1" style="flex-grow: 0.25;">1</button>
+                <button onclick="ChangePreview(2)" class="ChangePageButton" id="ChangePageButton2" style="flex-grow: 0.25;">2</button>
+            </div>
+
+            <br><br>
+            <font class="StarDivider">
+                ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈
+            </font>
+            <br>
+
+            <div class="Glass">
+                <p>Please select a category.</p>
+            </div>
+            <div class="Glass" style="display: flex; flex: 49,999%; justify-content: center;">
+                <a href="CreationsFolder/Programming.html" class="Links">
+                    Programmed<br>
+                    <img src="../Assets/Code.png" class="LinkButton">
+                </a>
+                <font style="opacity: 0%;">---</font>
+                <a href="CreationsFolder/Art.html" class="Links">
+                    Art<br>
+                    <img src="../Assets/Gallery.png" class="LinkButton">
+                </a>
+            </div><br><br>
+        </div>
+    </div><br>
+
+    <script>
+        var curPreview = 1;
+        var changePageTimer = 0;
+        
+        setInterval(ChangePreviewAutomatically, 8);
+        function ChangePreviewAutomatically() {
+            console.log(String(changePageTimer));
+            changePageTimer += 0.175;
+            if (changePageTimer > 100) {
+                switch (curPreview) {
+                    case 1: ChangePreview(2); break;
+                    case 2: ChangePreview(1); break;
+                }
+                
+                changePageTimer = 0;
+            }
+            document.getElementById("PreviewChangeBar").style.width = (String)(100 - changePageTimer) + "%";
+        }
+        
+        function ChangePreview(goPreview) {
+            if (curPreview < 1) {
+                curPreview = 1;
+            }
+            
+            var loop, buttonID, button, contents;
+            buttonID = document.getElementById(String("ChangePageButton" + goPreview));
+            contents = document.getElementById(String("Page" + curPreview));
+            upcomingContents = document.getElementById(String("Page" + goPreview));
+
+            button = document.getElementsByClassName("ChangePageButton");
+            for (loop = 0; loop < button.length; loop++)
+            {
+                button[loop].className = button[loop].className.replace(" active", "");
+            }
+
+            buttonID.className += " active";
+            contents.style.display = "none";
+            upcomingContents.style.display = "block";
+            curPreview = goPreview;
+            changePageTimer = 0;
+        }
+        ChangePreview(2);
+        </script>
+    </body>
+</html>
