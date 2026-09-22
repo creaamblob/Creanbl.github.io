@@ -8,14 +8,33 @@
     </head>
     <body>
         <style>
+        .Submit {
+            background-color: white;
+            background-image: none;
+            padding: 10px 0px 10px 0px;
+            margin: 0px;
+            width: 100%;
+            border: 2px pink solid;
+            border-width: 2px 0px 0px 0px;
+            border-radius: 0px;
+        }
+        .Submit:hover {
+            background-color: rgb(238, 228, 234);
+            transform: none;
+        }
         .emailField {
-            min-width: 70%;
-            max-width: 70%;
+            min-width: 99%;
+            max-width: 99%;
             height: 20px;
             min-height: 20px;
             max-height: 20px;
             font-size: 12px;
             overflow: auto;
+
+            background-color: white;
+            background-image: none;
+
+            padding: 0px;
         }
 		.Window2 {
 			border: 2px white solid;
@@ -36,7 +55,7 @@
 		.NavigationField {
 			padding: 60px 0px 40px;
             
-            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(219, 38, 108, 0.125)), url('../Assets/BG11.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(219, 38, 108, 0.125)), url('../Assets/BG04.webp');
             background-size: 256px;
             image-rendering: optimizeQuality;
 
@@ -49,6 +68,13 @@
         h2 {
             margin-bottom: 5px;
             overflow-wrap: anywhere;
+        }
+        form {
+            margin: 0px 16px 0px 16px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: 2px pink solid;
         }
     </style>
     <body>
@@ -81,7 +107,7 @@
                             You can navigate the website with the buttons provided below.
                             The site does work with desktop mode mobile, but I highly recommend using a computer !!<br><br>
                             
-                            This website is designed with Linux Mint Firefox in mind, so it might not work as intended on other operating systems and browsers.<br><br>
+                            This website is designed with Firefox in mind, so it might not work as intended on other browsers.<br><br>
                             
                             <font class="StarDivider">
                                 ◈⠈◦.°⚝ ★-☆★◈★☆-★ ⚝°.◦⠈◈<br>
@@ -131,26 +157,6 @@
                         </div>
                     </div>
 
-                    <h1>Send something for me, pleaseee 🥺🥺🥺🥺</h1>
-                    <form action="https://api.web3forms.com/submit" method="post">
-                        <p>
-                            It's like strawpage, I bet you want to write something in sooooo badddddd awww<br>
-                            Feel free to send your own website! ★
-                        </p>
-                        
-                        <textarea name="name" id="Spamton" class="emailField" style="display: none;" required></textarea>
-                        <textarea name="message" placeholder="Type here !!" class="emailField" style="height: 60px; min-height: 60px; max-height: 240px;" required></textarea>
-                        <br>
-                        
-                        <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
-                        <input type="hidden" name="subject" value="CreanWebsite Message New!!">
-                        <input type="hidden" name="redirect" value="https://creaamblob.github.io/Creanbl.github.io/Code/SendSuccess.html">
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                        <input type="hidden" name="from_name" value="CreanWebsite">
-                        <div class="h-captcha" data-captcha="true"></div>
-                        <button type="submit" id="submitEmail">Send</button>
-                    </form>
-
                     <h1>Creanbl 2024-2026</h1>
                 </div>
             </div>
@@ -169,8 +175,26 @@
                             creanblwebsite@gmail.com<br>
                             Discord: crean_bl
                         </p>
+                        
                     </div>
+
+                    <br>
                     
+                    <h1>Send something for me, pleaseee 🥺🥺🥺🥺</h1>
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <textarea name="name" id="Spamton" class="emailField" style="display: none;" required></textarea>
+                        <textarea name="message" placeholder="Type here !!" class="emailField" style="height: 60px; min-height: 60px; max-height: 240px;" required></textarea>
+                        <br>
+                        
+                        <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
+                        <input type="hidden" name="subject" value="CreanWebsite Message New!!">
+                        <input type="hidden" name="redirect" value="https://creaamblob.github.io/Creanbl.github.io/Code/SendSuccess.html">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <input type="hidden" name="from_name" value="CreanWebsite">
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <button class="Submit" type="submit" id="submitEmail">Send anonymously 📝🌸</button>
+                    </form>
+
                     <br>
                     
                     <h2>My Time</h2>
